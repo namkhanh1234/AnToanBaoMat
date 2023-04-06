@@ -31,5 +31,29 @@ namespace PhanHe1
             DataProvider provider = new DataProvider();
             dataGridView1.DataSource = provider.ExecuteQuery(query);
         }
+
+        private void objectPrivilegesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fObjectPrivilegeUser f =new fObjectPrivilegeUser();
+            f.ShowDialog();
+        }
+
+        private void systemPrivilegesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fSystemPrivilegeUser f =new fSystemPrivilegeUser();
+            f.ShowDialog();
+        }
+
+        private void objectPrivilegesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fObjectPrivilegeRole f =new fObjectPrivilegeRole();
+            f.ShowDialog();
+        }
+
+        private void systemPrivilegesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fSystemPrivilegeRole f = new fSystemPrivilegeRole();
+            f.ShowDialog();
+        }
     }
 }

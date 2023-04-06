@@ -26,11 +26,11 @@ namespace PhanHe1.DAO
         {
             DataTable data = new DataTable();
 
-            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand(query, connection);
+                OracleCommand command = new OracleCommand(query, connection);
 
                 if (paramenter != null)
                 {
@@ -40,13 +40,13 @@ namespace PhanHe1.DAO
                     {
                         if (item.Contains('@'))
                         {
-                            command.Parameters.AddWithValue(item, paramenter[i]);
+                            command.Parameters.Add(item, paramenter[i]);
                             i++;
                         }
                     }
                 }
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                OracleDataAdapter adapter = new OracleDataAdapter(command);
 
                 adapter.Fill(data);
 
@@ -60,11 +60,11 @@ namespace PhanHe1.DAO
         {
             int data = 0;
 
-            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand(query, connection);
+                OracleCommand command = new OracleCommand(query, connection);
 
                 if (paramenter != null)
                 {
@@ -74,7 +74,7 @@ namespace PhanHe1.DAO
                     {
                         if (item.Contains('@'))
                         {
-                            command.Parameters.AddWithValue(item, paramenter[i]);
+                            command.Parameters.Add(item, paramenter[i]);
                             i++;
                         }
                     }
@@ -92,11 +92,11 @@ namespace PhanHe1.DAO
         {
             object data = 0;
 
-            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand(query, connection);
+                OracleCommand command = new OracleCommand(query, connection);
 
                 if (paramenter != null)
                 {
@@ -106,7 +106,7 @@ namespace PhanHe1.DAO
                     {
                         if (item.Contains('@'))
                         {
-                            command.Parameters.AddWithValue(item, paramenter[i]);
+                            command.Parameters.Add(item, paramenter[i]);
                             i++;
                         }
                     }

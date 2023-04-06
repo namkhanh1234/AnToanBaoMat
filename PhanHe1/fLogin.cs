@@ -51,7 +51,7 @@ namespace PhanHe1
         }
         bool Login(string userName,string passWord)
         {
-            return false;
+            return userName=="admin" && passWord=="s123";
         }
 
         private void fLogin_Load(object sender, EventArgs e)

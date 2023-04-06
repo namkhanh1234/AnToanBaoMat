@@ -86,19 +86,55 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fObjectPrivilegeRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fObjectPrivilegeRole.Designer.cs">
+      <DependentUpon>fObjectPrivilegeRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fObjectPrivilegeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fObjectPrivilegeUser.Designer.cs">
+      <DependentUpon>fObjectPrivilegeUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSystemPrivilegeRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSystemPrivilegeRole.Designer.cs">
+      <DependentUpon>fSystemPrivilegeRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSystemPrivilegeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSystemPrivilegeUser.Designer.cs">
+      <DependentUpon>fSystemPrivilegeUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fObjectPrivilegeRole.resx">
+      <DependentUpon>fObjectPrivilegeRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fObjectPrivilegeUser.resx">
+      <DependentUpon>fObjectPrivilegeUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSystemPrivilegeRole.resx">
+      <DependentUpon>fSystemPrivilegeRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSystemPrivilegeUser.resx">
+      <DependentUpon>fSystemPrivilegeUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

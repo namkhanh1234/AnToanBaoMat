@@ -30,3 +30,7 @@ D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.csproj.CopyComplete
 D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.exe
 D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.pdb
 D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.fLogin.resources
+D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.fObjectPrivilegeUser.resources
+D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.fSystemPrivilegeUser.resources
+D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.fObjectPrivilegeRole.resources
+D:\NAM3\ATBM\Do An\PhanHe1\PhanHe1\obj\Debug\PhanHe1.fSystemPrivilegeRole.resources
