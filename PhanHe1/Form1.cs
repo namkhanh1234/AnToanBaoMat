@@ -55,5 +55,46 @@ namespace PhanHe1
             fSystemPrivilegeRole f = new fSystemPrivilegeRole();
             f.ShowDialog();
         }
+
+        private void btnGrantPrivileges_Click(object sender, EventArgs e)
+        {
+            fGrantPrivileges f = new fGrantPrivileges();
+            f.ShowDialog();
+        }
+
+        private void cấpQuyềnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fGrantPrivileges f = new fGrantPrivileges();
+            f.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrantPrivileges_Click_1(object sender, EventArgs e)
+        {
+            fGrantPrivileges f = new fGrantPrivileges();
+            f.ShowDialog();
+        }
+
+        private void tạoUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fCreate f = new fCreate();
+            f.ShowDialog();
+        }
+
+        private void xóaUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDropUser f = new fDropUser();
+            f.ShowDialog();
+        }
+
+        private void roleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fRole f = new fRole();
+            f.ShowDialog();
+        }
     }
 }

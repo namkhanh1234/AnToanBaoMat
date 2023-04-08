@@ -80,6 +80,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="fCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCreate.Designer.cs">
+      <DependentUpon>fCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDropUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDropUser.Designer.cs">
+      <DependentUpon>fDropUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="fGrantPrivileges.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fRevokeUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRevokeUser.Designer.cs">
+      <DependentUpon>fRevokeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRole.Designer.cs">
+      <DependentUpon>fRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSystemPrivilegeRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +148,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fCreate.resx">
+      <DependentUpon>fCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDropUser.resx">
+      <DependentUpon>fDropUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fGrantPrivileges.resx">
       <DependentUpon>fGrantPrivileges.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +168,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRevokeUser.resx">
+      <DependentUpon>fRevokeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRole.resx">
+      <DependentUpon>fRole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSystemPrivilegeRole.resx">
       <DependentUpon>fSystemPrivilegeRole.cs</DependentUpon>

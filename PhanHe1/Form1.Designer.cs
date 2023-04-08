@@ -33,11 +33,17 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinVềQuyềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quyềnCủaUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quyềnCủaRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.objectPrivilegesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemPrivilegesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quyềnCủaRoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.objectPrivilegesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.systemPrivilegesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tạoUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xóaUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGrantPrivileges = new System.Windows.Forms.Button();
+            this.roleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +72,9 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinVềQuyềnToolStripMenuItem});
+            this.thôngTinVềQuyềnToolStripMenuItem,
+            this.userToolStripMenuItem,
+            this.roleToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(878, 28);
@@ -88,8 +96,22 @@
             this.objectPrivilegesToolStripMenuItem,
             this.systemPrivilegesToolStripMenuItem});
             this.quyềnCủaUserToolStripMenuItem.Name = "quyềnCủaUserToolStripMenuItem";
-            this.quyềnCủaUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quyềnCủaUserToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.quyềnCủaUserToolStripMenuItem.Text = "Quyền của user";
+            // 
+            // objectPrivilegesToolStripMenuItem
+            // 
+            this.objectPrivilegesToolStripMenuItem.Name = "objectPrivilegesToolStripMenuItem";
+            this.objectPrivilegesToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.objectPrivilegesToolStripMenuItem.Text = "Object privileges";
+            this.objectPrivilegesToolStripMenuItem.Click += new System.EventHandler(this.objectPrivilegesToolStripMenuItem_Click);
+            // 
+            // systemPrivilegesToolStripMenuItem
+            // 
+            this.systemPrivilegesToolStripMenuItem.Name = "systemPrivilegesToolStripMenuItem";
+            this.systemPrivilegesToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.systemPrivilegesToolStripMenuItem.Text = "System privileges";
+            this.systemPrivilegesToolStripMenuItem.Click += new System.EventHandler(this.systemPrivilegesToolStripMenuItem_Click);
             // 
             // quyềnCủaRoleToolStripMenuItem
             // 
@@ -97,42 +119,76 @@
             this.objectPrivilegesToolStripMenuItem1,
             this.systemPrivilegesToolStripMenuItem1});
             this.quyềnCủaRoleToolStripMenuItem.Name = "quyềnCủaRoleToolStripMenuItem";
-            this.quyềnCủaRoleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.quyềnCủaRoleToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.quyềnCủaRoleToolStripMenuItem.Text = "Quyền của role";
-            // 
-            // objectPrivilegesToolStripMenuItem
-            // 
-            this.objectPrivilegesToolStripMenuItem.Name = "objectPrivilegesToolStripMenuItem";
-            this.objectPrivilegesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.objectPrivilegesToolStripMenuItem.Text = "Object privileges";
-            this.objectPrivilegesToolStripMenuItem.Click += new System.EventHandler(this.objectPrivilegesToolStripMenuItem_Click);
-            // 
-            // systemPrivilegesToolStripMenuItem
-            // 
-            this.systemPrivilegesToolStripMenuItem.Name = "systemPrivilegesToolStripMenuItem";
-            this.systemPrivilegesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.systemPrivilegesToolStripMenuItem.Text = "System privileges";
-            this.systemPrivilegesToolStripMenuItem.Click += new System.EventHandler(this.systemPrivilegesToolStripMenuItem_Click);
             // 
             // objectPrivilegesToolStripMenuItem1
             // 
             this.objectPrivilegesToolStripMenuItem1.Name = "objectPrivilegesToolStripMenuItem1";
-            this.objectPrivilegesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.objectPrivilegesToolStripMenuItem1.Size = new System.Drawing.Size(207, 26);
             this.objectPrivilegesToolStripMenuItem1.Text = "Object privileges";
             this.objectPrivilegesToolStripMenuItem1.Click += new System.EventHandler(this.objectPrivilegesToolStripMenuItem1_Click);
             // 
             // systemPrivilegesToolStripMenuItem1
             // 
             this.systemPrivilegesToolStripMenuItem1.Name = "systemPrivilegesToolStripMenuItem1";
-            this.systemPrivilegesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.systemPrivilegesToolStripMenuItem1.Size = new System.Drawing.Size(207, 26);
             this.systemPrivilegesToolStripMenuItem1.Text = "System privileges";
             this.systemPrivilegesToolStripMenuItem1.Click += new System.EventHandler(this.systemPrivilegesToolStripMenuItem1_Click);
+            // 
+            // userToolStripMenuItem
+            // 
+            this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tạoUserToolStripMenuItem,
+            this.xóaUserToolStripMenuItem,
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem});
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.userToolStripMenuItem.Text = "User";
+            // 
+            // tạoUserToolStripMenuItem
+            // 
+            this.tạoUserToolStripMenuItem.Name = "tạoUserToolStripMenuItem";
+            this.tạoUserToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.tạoUserToolStripMenuItem.Text = "Tạo user";
+            this.tạoUserToolStripMenuItem.Click += new System.EventHandler(this.tạoUserToolStripMenuItem_Click);
+            // 
+            // xóaUserToolStripMenuItem
+            // 
+            this.xóaUserToolStripMenuItem.Name = "xóaUserToolStripMenuItem";
+            this.xóaUserToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.xóaUserToolStripMenuItem.Text = "Xóa user";
+            this.xóaUserToolStripMenuItem.Click += new System.EventHandler(this.xóaUserToolStripMenuItem_Click);
+            // 
+            // thayĐổiMậtKhẩuUserToolStripMenuItem
+            // 
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem.Name = "thayĐổiMậtKhẩuUserToolStripMenuItem";
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem.Text = "Thay đổi mật khẩu user";
+            // 
+            // btnGrantPrivileges
+            // 
+            this.btnGrantPrivileges.Location = new System.Drawing.Point(202, 77);
+            this.btnGrantPrivileges.Name = "btnGrantPrivileges";
+            this.btnGrantPrivileges.Size = new System.Drawing.Size(184, 52);
+            this.btnGrantPrivileges.TabIndex = 3;
+            this.btnGrantPrivileges.Text = "Cấp quyền";
+            this.btnGrantPrivileges.UseVisualStyleBackColor = true;
+            this.btnGrantPrivileges.Click += new System.EventHandler(this.btnGrantPrivileges_Click_1);
+            // 
+            // roleToolStripMenuItem
+            // 
+            this.roleToolStripMenuItem.Name = "roleToolStripMenuItem";
+            this.roleToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.roleToolStripMenuItem.Text = "Role";
+            this.roleToolStripMenuItem.Click += new System.EventHandler(this.roleToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 490);
+            this.Controls.Add(this.btnGrantPrivileges);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
@@ -161,6 +217,12 @@
         private System.Windows.Forms.ToolStripMenuItem systemPrivilegesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem objectPrivilegesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem systemPrivilegesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tạoUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xóaUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thayĐổiMậtKhẩuUserToolStripMenuItem;
+        private System.Windows.Forms.Button btnGrantPrivileges;
+        private System.Windows.Forms.ToolStripMenuItem roleToolStripMenuItem;
     }
 }
 
