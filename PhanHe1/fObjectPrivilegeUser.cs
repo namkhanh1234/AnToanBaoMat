@@ -31,5 +31,10 @@ namespace PhanHe1
                 MessageBox.Show("Không tìm thấy user này");
             }
         }
+
+        private void dgvObjectUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

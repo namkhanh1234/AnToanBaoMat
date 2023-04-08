@@ -45,44 +45,50 @@
             // 
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(670, 350);
+            this.panel1.Size = new System.Drawing.Size(502, 284);
             this.panel1.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dgvSystemUser);
-            this.panel3.Location = new System.Drawing.Point(6, 97);
+            this.panel3.Location = new System.Drawing.Point(4, 79);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(662, 252);
+            this.panel3.Size = new System.Drawing.Size(496, 205);
             this.panel3.TabIndex = 1;
             // 
             // dgvSystemUser
             // 
             this.dgvSystemUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSystemUser.Location = new System.Drawing.Point(6, 4);
+            this.dgvSystemUser.Location = new System.Drawing.Point(4, 3);
+            this.dgvSystemUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvSystemUser.Name = "dgvSystemUser";
             this.dgvSystemUser.RowHeadersWidth = 51;
             this.dgvSystemUser.RowTemplate.Height = 24;
-            this.dgvSystemUser.Size = new System.Drawing.Size(655, 247);
+            this.dgvSystemUser.Size = new System.Drawing.Size(491, 201);
             this.dgvSystemUser.TabIndex = 0;
+            this.dgvSystemUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSystemUser_CellContentClick);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnSearchSystemUser);
             this.panel2.Controls.Add(this.txbUserNameSystemUser);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 4);
+            this.panel2.Location = new System.Drawing.Point(2, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(666, 86);
+            this.panel2.Size = new System.Drawing.Size(500, 70);
             this.panel2.TabIndex = 0;
             // 
             // btnSearchSystemUser
             // 
-            this.btnSearchSystemUser.Location = new System.Drawing.Point(574, 14);
+            this.btnSearchSystemUser.Location = new System.Drawing.Point(430, 11);
+            this.btnSearchSystemUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchSystemUser.Name = "btnSearchSystemUser";
-            this.btnSearchSystemUser.Size = new System.Drawing.Size(60, 59);
+            this.btnSearchSystemUser.Size = new System.Drawing.Size(45, 48);
             this.btnSearchSystemUser.TabIndex = 2;
             this.btnSearchSystemUser.Text = "Tìm";
             this.btnSearchSystemUser.UseVisualStyleBackColor = true;
@@ -90,27 +96,30 @@
             // 
             // txbUserNameSystemUser
             // 
-            this.txbUserNameSystemUser.Location = new System.Drawing.Point(159, 32);
+            this.txbUserNameSystemUser.Location = new System.Drawing.Point(119, 26);
+            this.txbUserNameSystemUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txbUserNameSystemUser.Name = "txbUserNameSystemUser";
-            this.txbUserNameSystemUser.Size = new System.Drawing.Size(381, 22);
+            this.txbUserNameSystemUser.Size = new System.Drawing.Size(287, 20);
             this.txbUserNameSystemUser.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(20, 32);
+            this.label1.Location = new System.Drawing.Point(15, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 24);
+            this.label1.Size = new System.Drawing.Size(97, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "User name:";
             // 
             // fSystemPrivilegeUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 363);
+            this.ClientSize = new System.Drawing.Size(515, 295);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fSystemPrivilegeUser";
             this.Text = "System Privileges của User";
             this.panel1.ResumeLayout(false);
