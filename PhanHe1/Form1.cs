@@ -96,5 +96,17 @@ namespace PhanHe1
             fRole f = new fRole();
             f.ShowDialog();
         }
+
+        private void btnRevoke_Click(object sender, EventArgs e)
+        {
+            fRevokeUser f = new fRevokeUser();
+            f.ShowDialog();
+        }
+
+        private void thayĐổiMậtKhẩuUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fChangePass f = new fChangePass();
+            f.ShowDialog();
+        }
     }
 }

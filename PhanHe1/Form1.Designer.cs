@@ -42,8 +42,9 @@
             this.tạoUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thayĐổiMậtKhẩuUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnGrantPrivileges = new System.Windows.Forms.Button();
             this.roleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGrantPrivileges = new System.Windows.Forms.Button();
+            this.btnRevoke = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -165,6 +166,14 @@
             this.thayĐổiMậtKhẩuUserToolStripMenuItem.Name = "thayĐổiMậtKhẩuUserToolStripMenuItem";
             this.thayĐổiMậtKhẩuUserToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.thayĐổiMậtKhẩuUserToolStripMenuItem.Text = "Thay đổi mật khẩu user";
+            this.thayĐổiMậtKhẩuUserToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiMậtKhẩuUserToolStripMenuItem_Click);
+            // 
+            // roleToolStripMenuItem
+            // 
+            this.roleToolStripMenuItem.Name = "roleToolStripMenuItem";
+            this.roleToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.roleToolStripMenuItem.Text = "Role";
+            this.roleToolStripMenuItem.Click += new System.EventHandler(this.roleToolStripMenuItem_Click);
             // 
             // btnGrantPrivileges
             // 
@@ -176,18 +185,22 @@
             this.btnGrantPrivileges.UseVisualStyleBackColor = true;
             this.btnGrantPrivileges.Click += new System.EventHandler(this.btnGrantPrivileges_Click_1);
             // 
-            // roleToolStripMenuItem
+            // btnRevoke
             // 
-            this.roleToolStripMenuItem.Name = "roleToolStripMenuItem";
-            this.roleToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
-            this.roleToolStripMenuItem.Text = "Role";
-            this.roleToolStripMenuItem.Click += new System.EventHandler(this.roleToolStripMenuItem_Click);
+            this.btnRevoke.Location = new System.Drawing.Point(392, 77);
+            this.btnRevoke.Name = "btnRevoke";
+            this.btnRevoke.Size = new System.Drawing.Size(184, 52);
+            this.btnRevoke.TabIndex = 4;
+            this.btnRevoke.Text = "Thu hồi quyền";
+            this.btnRevoke.UseVisualStyleBackColor = true;
+            this.btnRevoke.Click += new System.EventHandler(this.btnRevoke_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 490);
+            this.Controls.Add(this.btnRevoke);
             this.Controls.Add(this.btnGrantPrivileges);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -223,6 +236,7 @@
         private System.Windows.Forms.ToolStripMenuItem thayĐổiMậtKhẩuUserToolStripMenuItem;
         private System.Windows.Forms.Button btnGrantPrivileges;
         private System.Windows.Forms.ToolStripMenuItem roleToolStripMenuItem;
+        private System.Windows.Forms.Button btnRevoke;
     }
 }
 

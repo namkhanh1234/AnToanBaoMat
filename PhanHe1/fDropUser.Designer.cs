@@ -101,7 +101,7 @@
             this.ClientSize = new System.Drawing.Size(554, 159);
             this.Controls.Add(this.panel1);
             this.Name = "fDropUser";
-            this.Text = "fDropUser";
+            this.Text = "Xóa người dùng";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

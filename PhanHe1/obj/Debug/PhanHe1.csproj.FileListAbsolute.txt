@@ -111,3 +111,5 @@ D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.pdb
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fCreate.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fDropUser.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fRole.resources
+D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fRevokeUser.resources
+D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fChangePass.resources

@@ -80,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="fChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePass.Designer.cs">
+      <DependentUpon>fChangePass.cs</DependentUpon>
+    </Compile>
     <Compile Include="fCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fChangePass.resx">
+      <DependentUpon>fChangePass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fCreate.resx">
       <DependentUpon>fCreate.cs</DependentUpon>
     </EmbeddedResource>

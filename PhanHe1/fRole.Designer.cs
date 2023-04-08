@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCreateRole = new System.Windows.Forms.Button();
             this.btnCancelRole = new System.Windows.Forms.Button();
             this.btnDropRole = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbRoleName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCreateRole = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +49,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(558, 157);
             this.panel1.TabIndex = 2;
+            // 
+            // btnCreateRole
+            // 
+            this.btnCreateRole.Location = new System.Drawing.Point(116, 90);
+            this.btnCreateRole.Name = "btnCreateRole";
+            this.btnCreateRole.Size = new System.Drawing.Size(135, 49);
+            this.btnCreateRole.TabIndex = 4;
+            this.btnCreateRole.Text = "Tạo";
+            this.btnCreateRole.UseVisualStyleBackColor = true;
+            this.btnCreateRole.Click += new System.EventHandler(this.btnCreateRole_Click);
             // 
             // btnCancelRole
             // 
@@ -96,16 +106,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Role name:";
             // 
-            // btnCreateRole
-            // 
-            this.btnCreateRole.Location = new System.Drawing.Point(116, 90);
-            this.btnCreateRole.Name = "btnCreateRole";
-            this.btnCreateRole.Size = new System.Drawing.Size(135, 49);
-            this.btnCreateRole.TabIndex = 4;
-            this.btnCreateRole.Text = "Tạo";
-            this.btnCreateRole.UseVisualStyleBackColor = true;
-            this.btnCreateRole.Click += new System.EventHandler(this.btnCreateRole_Click);
-            // 
             // fRole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,7 +113,7 @@
             this.ClientSize = new System.Drawing.Size(582, 167);
             this.Controls.Add(this.panel1);
             this.Name = "fRole";
-            this.Text = "fRole";
+            this.Text = "Role";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
