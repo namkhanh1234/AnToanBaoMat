@@ -192,7 +192,7 @@
             this.ClientSize = new System.Drawing.Size(734, 376);
             this.Controls.Add(this.panel1);
             this.Name = "fRevokeRole";
-            this.Text = "fRevokeRole";
+            this.Text = "Thu hồi quyền của role";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

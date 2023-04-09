@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSystem = new System.Windows.Forms.Button();
+            this.btnObject = new System.Windows.Forms.Button();
             this.btnCancleRevoke = new System.Windows.Forms.Button();
             this.btnRevokeUser = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -40,8 +42,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbUserName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnObject = new System.Windows.Forms.Button();
-            this.btnSystem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -61,6 +61,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(716, 370);
             this.panel1.TabIndex = 0;
+            // 
+            // btnSystem
+            // 
+            this.btnSystem.Location = new System.Drawing.Point(572, 136);
+            this.btnSystem.Name = "btnSystem";
+            this.btnSystem.Size = new System.Drawing.Size(113, 51);
+            this.btnSystem.TabIndex = 6;
+            this.btnSystem.Text = "System";
+            this.btnSystem.UseVisualStyleBackColor = true;
+            this.btnSystem.Click += new System.EventHandler(this.btnSystem_Click);
+            // 
+            // btnObject
+            // 
+            this.btnObject.Location = new System.Drawing.Point(572, 60);
+            this.btnObject.Name = "btnObject";
+            this.btnObject.Size = new System.Drawing.Size(113, 51);
+            this.btnObject.TabIndex = 5;
+            this.btnObject.Text = "Object";
+            this.btnObject.UseVisualStyleBackColor = true;
+            this.btnObject.Click += new System.EventHandler(this.btnObject_Click);
             // 
             // btnCancleRevoke
             // 
@@ -167,26 +187,6 @@
             this.label1.Text = "Username:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnObject
-            // 
-            this.btnObject.Location = new System.Drawing.Point(572, 60);
-            this.btnObject.Name = "btnObject";
-            this.btnObject.Size = new System.Drawing.Size(113, 51);
-            this.btnObject.TabIndex = 5;
-            this.btnObject.Text = "Object";
-            this.btnObject.UseVisualStyleBackColor = true;
-            this.btnObject.Click += new System.EventHandler(this.btnObject_Click);
-            // 
-            // btnSystem
-            // 
-            this.btnSystem.Location = new System.Drawing.Point(572, 136);
-            this.btnSystem.Name = "btnSystem";
-            this.btnSystem.Size = new System.Drawing.Size(113, 51);
-            this.btnSystem.TabIndex = 6;
-            this.btnSystem.Text = "System";
-            this.btnSystem.UseVisualStyleBackColor = true;
-            this.btnSystem.Click += new System.EventHandler(this.btnSystem_Click);
-            // 
             // fRevokeUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,7 +194,7 @@
             this.ClientSize = new System.Drawing.Size(725, 378);
             this.Controls.Add(this.panel1);
             this.Name = "fRevokeUser";
-            this.Text = "Thu hồi quyền";
+            this.Text = "Thu hồi quyền của user";
             this.Load += new System.EventHandler(this.fRevokeUser_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
