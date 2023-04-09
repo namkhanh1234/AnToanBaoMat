@@ -26,10 +26,6 @@ namespace PhanHe1
             DataProvider provider = new DataProvider();
             dgvSystemRole.DataSource = provider.ExecuteQuery(query);
             int check = provider.ExecuteNonQuery(query);
-            if (check == -1)
-            {
-                MessageBox.Show("Không tìm thấy role này");
-            }
         }
 
         private void label1_Click(object sender, EventArgs e)

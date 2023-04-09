@@ -25,11 +25,6 @@ namespace PhanHe1
             string query = "SELECT * FROM ROLE_TAB_PRIVS WHERE ROLE = '" + roleName + "'";
             DataProvider provider = new DataProvider();
             dgvObjectRole.DataSource = provider.ExecuteQuery(query);
-            int check = provider.ExecuteNonQuery(query);
-            if (check==-1)
-            {
-                MessageBox.Show("Không tìm thấy role này");
-            }    
        
         }
 

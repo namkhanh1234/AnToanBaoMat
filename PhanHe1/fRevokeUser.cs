@@ -33,12 +33,6 @@ namespace PhanHe1
         private void cbUserName_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            string query = "SELECT TABLE_NAME FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "' AND OWNER='ADMIN'";
-            DataProvider provider = new DataProvider();
-            cbTable.DataSource = provider.ExecuteQuery(query);
-            cbTable.DisplayMember = "TABLE_NAME";
-
-
         }
 
         private void fRevokeUser_Load(object sender, EventArgs e)
@@ -48,7 +42,7 @@ namespace PhanHe1
 
         private void cbTable_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "SELECT PRIVILEGE FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "' AND TABLE_NAME='"+ cbTable.Text +"'";
+            string query = "SELECT PRIVILEGE FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "' AND TABLE_NAME='"+cbTable.Text+"'";
             DataProvider provider = new DataProvider();
             cbPrivileges.DataSource = provider.ExecuteQuery(query);
             cbPrivileges.DisplayMember = "PRIVILEGE";
@@ -65,6 +59,29 @@ namespace PhanHe1
         private void btnCancleRevoke_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnObject_Click(object sender, EventArgs e)
+        {
+            cbTable.Enabled = true;
+            string query = "SELECT TABLE_NAME FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "' AND OWNER='ADMIN'";
+            DataProvider provider = new DataProvider();
+            cbTable.DataSource = provider.ExecuteQuery(query);
+            cbTable.DisplayMember = "TABLE_NAME";
+        }
+
+        private void btnSystem_Click(object sender, EventArgs e)
+        {
+            cbTable.Enabled = false;
+            string query = "SELECT PRIVILEGE FROM DBA_SYS_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "'";
+            DataProvider provider = new DataProvider();
+            cbPrivileges.DataSource = provider.ExecuteQuery(query);
+            cbPrivileges.DisplayMember = "PRIVILEGE";
+        }
+
+        private void cbPrivileges_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

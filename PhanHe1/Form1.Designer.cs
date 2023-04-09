@@ -44,7 +44,9 @@
             this.thayĐổiMậtKhẩuUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.roleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGrantPrivileges = new System.Windows.Forms.Button();
-            this.btnRevoke = new System.Windows.Forms.Button();
+            this.thuHoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.roleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +77,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinVềQuyềnToolStripMenuItem,
             this.userToolStripMenuItem,
-            this.roleToolStripMenuItem});
+            this.roleToolStripMenuItem,
+            this.thuHoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(878, 28);
@@ -97,7 +100,7 @@
             this.objectPrivilegesToolStripMenuItem,
             this.systemPrivilegesToolStripMenuItem});
             this.quyềnCủaUserToolStripMenuItem.Name = "quyềnCủaUserToolStripMenuItem";
-            this.quyềnCủaUserToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.quyềnCủaUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quyềnCủaUserToolStripMenuItem.Text = "Quyền của user";
             // 
             // objectPrivilegesToolStripMenuItem
@@ -120,7 +123,7 @@
             this.objectPrivilegesToolStripMenuItem1,
             this.systemPrivilegesToolStripMenuItem1});
             this.quyềnCủaRoleToolStripMenuItem.Name = "quyềnCủaRoleToolStripMenuItem";
-            this.quyềnCủaRoleToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.quyềnCủaRoleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quyềnCủaRoleToolStripMenuItem.Text = "Quyền của role";
             // 
             // objectPrivilegesToolStripMenuItem1
@@ -185,22 +188,34 @@
             this.btnGrantPrivileges.UseVisualStyleBackColor = true;
             this.btnGrantPrivileges.Click += new System.EventHandler(this.btnGrantPrivileges_Click_1);
             // 
-            // btnRevoke
+            // thuHoToolStripMenuItem
             // 
-            this.btnRevoke.Location = new System.Drawing.Point(392, 77);
-            this.btnRevoke.Name = "btnRevoke";
-            this.btnRevoke.Size = new System.Drawing.Size(184, 52);
-            this.btnRevoke.TabIndex = 4;
-            this.btnRevoke.Text = "Thu hồi quyền";
-            this.btnRevoke.UseVisualStyleBackColor = true;
-            this.btnRevoke.Click += new System.EventHandler(this.btnRevoke_Click);
+            this.thuHoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userToolStripMenuItem2,
+            this.roleToolStripMenuItem1});
+            this.thuHoToolStripMenuItem.Name = "thuHoToolStripMenuItem";
+            this.thuHoToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.thuHoToolStripMenuItem.Text = "Thu hồi quyền";
+            // 
+            // userToolStripMenuItem2
+            // 
+            this.userToolStripMenuItem2.Name = "userToolStripMenuItem2";
+            this.userToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.userToolStripMenuItem2.Text = "User";
+            this.userToolStripMenuItem2.Click += new System.EventHandler(this.userToolStripMenuItem2_Click);
+            // 
+            // roleToolStripMenuItem1
+            // 
+            this.roleToolStripMenuItem1.Name = "roleToolStripMenuItem1";
+            this.roleToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.roleToolStripMenuItem1.Text = "Role";
+            this.roleToolStripMenuItem1.Click += new System.EventHandler(this.roleToolStripMenuItem1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 490);
-            this.Controls.Add(this.btnRevoke);
             this.Controls.Add(this.btnGrantPrivileges);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -236,7 +251,9 @@
         private System.Windows.Forms.ToolStripMenuItem thayĐổiMậtKhẩuUserToolStripMenuItem;
         private System.Windows.Forms.Button btnGrantPrivileges;
         private System.Windows.Forms.ToolStripMenuItem roleToolStripMenuItem;
-        private System.Windows.Forms.Button btnRevoke;
+        private System.Windows.Forms.ToolStripMenuItem thuHoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem roleToolStripMenuItem1;
     }
 }
 
