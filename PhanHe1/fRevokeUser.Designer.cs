@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbUserName = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cbTable = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnCancleRevoke = new System.Windows.Forms.Button();
+            this.btnRevokeUser = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbPrivileges = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnRevokeUser = new System.Windows.Forms.Button();
-            this.btnCancleRevoke = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.cbTable = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cbUserName = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,34 +58,52 @@
             this.panel1.Size = new System.Drawing.Size(716, 370);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // btnCancleRevoke
             // 
-            this.panel2.Controls.Add(this.cbUserName);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(9, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 79);
-            this.panel2.TabIndex = 0;
+            this.btnCancleRevoke.Location = new System.Drawing.Point(540, 302);
+            this.btnCancleRevoke.Name = "btnCancleRevoke";
+            this.btnCancleRevoke.Size = new System.Drawing.Size(124, 51);
+            this.btnCancleRevoke.TabIndex = 4;
+            this.btnCancleRevoke.Text = "Thoát";
+            this.btnCancleRevoke.UseVisualStyleBackColor = true;
+            this.btnCancleRevoke.Click += new System.EventHandler(this.btnCancleRevoke_Click);
             // 
-            // label1
+            // btnRevokeUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(15, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Username:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.btnRevokeUser.Location = new System.Drawing.Point(387, 302);
+            this.btnRevokeUser.Name = "btnRevokeUser";
+            this.btnRevokeUser.Size = new System.Drawing.Size(124, 51);
+            this.btnRevokeUser.TabIndex = 3;
+            this.btnRevokeUser.Text = "Thu hồi";
+            this.btnRevokeUser.UseVisualStyleBackColor = true;
+            this.btnRevokeUser.Click += new System.EventHandler(this.btnRevokeUser_Click);
             // 
-            // cbUserName
+            // panel4
             // 
-            this.cbUserName.FormattingEnabled = true;
-            this.cbUserName.Location = new System.Drawing.Point(185, 30);
-            this.cbUserName.Name = "cbUserName";
-            this.cbUserName.Size = new System.Drawing.Size(450, 24);
-            this.cbUserName.TabIndex = 1;
-            this.cbUserName.SelectedIndexChanged += new System.EventHandler(this.cbUserName_SelectedIndexChanged);
+            this.panel4.Controls.Add(this.cbPrivileges);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(9, 182);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(697, 79);
+            this.panel4.TabIndex = 2;
+            // 
+            // cbPrivileges
+            // 
+            this.cbPrivileges.FormattingEnabled = true;
+            this.cbPrivileges.Location = new System.Drawing.Point(185, 29);
+            this.cbPrivileges.Name = "cbPrivileges";
+            this.cbPrivileges.Size = new System.Drawing.Size(450, 24);
+            this.cbPrivileges.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(15, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 27);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Quyền:";
             // 
             // panel3
             // 
@@ -115,51 +133,34 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Bảng:";
             // 
-            // panel4
+            // panel2
             // 
-            this.panel4.Controls.Add(this.cbPrivileges);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(9, 182);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(697, 79);
-            this.panel4.TabIndex = 2;
+            this.panel2.Controls.Add(this.cbUserName);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(9, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(697, 79);
+            this.panel2.TabIndex = 0;
             // 
-            // cbPrivileges
+            // cbUserName
             // 
-            this.cbPrivileges.FormattingEnabled = true;
-            this.cbPrivileges.Location = new System.Drawing.Point(185, 29);
-            this.cbPrivileges.Name = "cbPrivileges";
-            this.cbPrivileges.Size = new System.Drawing.Size(450, 24);
-            this.cbPrivileges.TabIndex = 1;
+            this.cbUserName.FormattingEnabled = true;
+            this.cbUserName.Location = new System.Drawing.Point(185, 30);
+            this.cbUserName.Name = "cbUserName";
+            this.cbUserName.Size = new System.Drawing.Size(450, 24);
+            this.cbUserName.TabIndex = 1;
+            this.cbUserName.SelectedIndexChanged += new System.EventHandler(this.cbUserName_SelectedIndexChanged);
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(15, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 27);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Quyền:";
-            // 
-            // btnRevokeUser
-            // 
-            this.btnRevokeUser.Location = new System.Drawing.Point(387, 302);
-            this.btnRevokeUser.Name = "btnRevokeUser";
-            this.btnRevokeUser.Size = new System.Drawing.Size(124, 51);
-            this.btnRevokeUser.TabIndex = 3;
-            this.btnRevokeUser.Text = "Thu hồi";
-            this.btnRevokeUser.UseVisualStyleBackColor = true;
-            this.btnRevokeUser.Click += new System.EventHandler(this.btnRevokeUser_Click);
-            // 
-            // btnCancleRevoke
-            // 
-            this.btnCancleRevoke.Location = new System.Drawing.Point(540, 302);
-            this.btnCancleRevoke.Name = "btnCancleRevoke";
-            this.btnCancleRevoke.Size = new System.Drawing.Size(124, 51);
-            this.btnCancleRevoke.TabIndex = 4;
-            this.btnCancleRevoke.Text = "Thoát";
-            this.btnCancleRevoke.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(15, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 27);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // fRevokeUser
             // 
@@ -171,12 +172,12 @@
             this.Text = "Thu hồi quyền";
             this.Load += new System.EventHandler(this.fRevokeUser_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

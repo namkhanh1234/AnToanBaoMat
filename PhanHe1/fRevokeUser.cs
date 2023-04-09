@@ -33,7 +33,7 @@ namespace PhanHe1
         private void cbUserName_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            string query = "SELECT TABLE_NAME FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "'";
+            string query = "SELECT TABLE_NAME FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + cbUserName.Text + "' AND OWNER='ADMIN'";
             DataProvider provider = new DataProvider();
             cbTable.DataSource = provider.ExecuteQuery(query);
             cbTable.DisplayMember = "TABLE_NAME";
@@ -56,10 +56,15 @@ namespace PhanHe1
 
         private void btnRevokeUser_Click(object sender, EventArgs e)
         {
-            string query = "REVOKE " + cbPrivileges.Text + " ON sys." + cbTable.Text + " FROM " + cbUserName.Text;
+            string query = "REVOKE " + cbPrivileges.Text + " ON " + cbTable.Text + " FROM " + cbUserName.Text;
             DataProvider provider = new DataProvider();
             int data = provider.ExecuteNonQuery(query);
             MessageBox.Show("Thu hồi quyền thành công");
+        }
+
+        private void btnCancleRevoke_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
