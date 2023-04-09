@@ -25,11 +25,6 @@ namespace PhanHe1
             string query = "SELECT * FROM DBA_TAB_PRIVS WHERE GRANTEE = '" + userName+"'";
             DataProvider provider = new DataProvider();
             dgvObjectUser.DataSource = provider.ExecuteQuery(query);
-            int check = provider.ExecuteNonQuery(query);
-            if (check == -1)
-            {
-                MessageBox.Show("Không tìm thấy user này");
-            }
         }
 
         private void dgvObjectUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
