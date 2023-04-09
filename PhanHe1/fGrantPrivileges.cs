@@ -19,11 +19,15 @@ namespace PhanHe1
             InitializeComponent();
             string queryUserList = "SELECT username FROM all_users";
             String queryTable = "SELECT table_name FROM all_tables WHERE owner = 'ADMIN'";
+            String queryRoleList = "SELECT role FROM DBA_ROLES";
             DataProvider provider = new DataProvider();
             comboboxlisuser.DataSource = provider.ExecuteQuery(queryUserList);
             comboboxlisuser.DisplayMember = "username";
             comboBoxListTable.DataSource = provider.ExecuteQuery(queryTable);
             comboBoxListTable.DisplayMember = "table_name";
+            comboBoxRole.DataSource= provider.ExecuteQuery(queryRoleList);
+            comboBoxRole.DisplayMember = "role";
+           
             //dgvTable.DataSource = provider.ExecuteQuery(queryTable);
 
         }
@@ -42,6 +46,7 @@ namespace PhanHe1
         {
             string username = comboboxlisuser.Text;
             string tablename=comboBoxListTable.Text;
+            string role=comboBoxRole.Text;
             string columns = "";
             string privileges = "";
             string option = "";
@@ -80,7 +85,17 @@ namespace PhanHe1
 
             }
 
-            string query = "GRANT " + privileges + " ON " + tablename + columns + " TO " + username +" "+ option;
+            if(username!= string.Empty && role != string.Empty)
+            {
+                username += "," + role;
+            }
+            else
+            {
+                
+                username = username != string.Empty ? username : role;
+            }
+
+            string query = "GRANT " + privileges +" "+ columns + " ON " + tablename + " TO " + username  +" "+ option;
             if (privileges == "")
             {
                 MessageBox.Show("bạn chưa chọn quyền để cấp cho user!");
@@ -88,13 +103,13 @@ namespace PhanHe1
             else
             {
                 DataProvider provider = new DataProvider();
-                int check =provider.ExecuteNonQuery(query);
+                int check = provider.ExecuteNonQuery(query);
                 if (check == -1)
                 {
-     
+
                     MessageBox.Show("cấp quyền thành công! Vui lòng kiểm tra!");
                 }
-
+                //MessageBox.Show(query);
             }
         }
 
@@ -124,7 +139,7 @@ namespace PhanHe1
             bool isValue1Selected = false;
             for (int i = 0; i < checkedListBoxGrant.Items.Count; i++)
             {
-                if (checkedListBoxGrant.GetItemChecked(i) && (checkedListBoxGrant.Items[i].ToString() == "DELETE" ||  checkedListBoxGrant.Items[i].ToString() == "INSERT"))
+                if (checkedListBoxGrant.GetItemChecked(i) && (checkedListBoxGrant.Items[i].ToString() == "DELETE" || checkedListBoxGrant.Items[i].ToString() == "SELECT"))
                 {
                     isValue1Selected = true;
                     break;
@@ -135,6 +150,61 @@ namespace PhanHe1
             if (isValue1Selected)
             {
                 listboxColumn.Enabled = false;
+            }
+        }
+
+        private void lbUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox1_CheckedChanged_2(object sender, EventArgs e)
+        {
+            if(checkBoxNoneUser.Checked)
+            {
+                comboboxlisuser.Text = string.Empty;
+                comboboxlisuser.Enabled = false;
+            }
+            else
+            {
+                comboboxlisuser.Enabled = true;
+            }
+        }
+
+        private void comboBoxRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (checkBoxNoneRole.Checked)
+            {
+                comboBoxRole.Text = string.Empty;
+                comboBoxRole.Enabled = false;
+            }
+            else
+            {
+               
+                comboBoxRole.Enabled = true;
+            }
+        }
+
+        private void checkBoxNoneRole_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxNoneRole.Checked)
+            {
+                comboBoxRole.Text = string.Empty;
+                comboBoxRole.Enabled = false;
+            }
+            else
+            {
+                comboBoxRole.Enabled = true;
             }
         }
     }

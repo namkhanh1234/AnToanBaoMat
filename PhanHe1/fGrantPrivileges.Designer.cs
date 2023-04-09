@@ -38,6 +38,10 @@
             this.checkBoxGrantOption = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.checkBoxNoneUser = new System.Windows.Forms.CheckBox();
+            this.checkBoxNoneRole = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // checkedListBoxGrant
@@ -72,9 +76,10 @@
             this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.Location = new System.Drawing.Point(23, 34);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(83, 20);
+            this.lbUsername.Size = new System.Drawing.Size(43, 20);
             this.lbUsername.TabIndex = 3;
-            this.lbUsername.Text = "Username";
+            this.lbUsername.Text = "User";
+            this.lbUsername.Click += new System.EventHandler(this.lbUsername_Click);
             // 
             // btnSave
             // 
@@ -92,7 +97,7 @@
             // 
             this.comboBoxListTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxListTable.FormattingEnabled = true;
-            this.comboBoxListTable.Location = new System.Drawing.Point(109, 103);
+            this.comboBoxListTable.Location = new System.Drawing.Point(109, 160);
             this.comboBoxListTable.Name = "comboBoxListTable";
             this.comboBoxListTable.Size = new System.Drawing.Size(359, 28);
             this.comboBoxListTable.TabIndex = 6;
@@ -102,7 +107,7 @@
             // 
             this.lbTableName.AutoSize = true;
             this.lbTableName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTableName.Location = new System.Drawing.Point(24, 103);
+            this.lbTableName.Location = new System.Drawing.Point(24, 160);
             this.lbTableName.Name = "lbTableName";
             this.lbTableName.Size = new System.Drawing.Size(48, 20);
             this.lbTableName.TabIndex = 7;
@@ -114,9 +119,9 @@
             this.listboxColumn.FormattingEnabled = true;
             this.listboxColumn.Items.AddRange(new object[] {
             "empty"});
-            this.listboxColumn.Location = new System.Drawing.Point(109, 171);
+            this.listboxColumn.Location = new System.Drawing.Point(109, 213);
             this.listboxColumn.Name = "listboxColumn";
-            this.listboxColumn.Size = new System.Drawing.Size(359, 235);
+            this.listboxColumn.Size = new System.Drawing.Size(359, 193);
             this.listboxColumn.TabIndex = 8;
             this.listboxColumn.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
             // 
@@ -145,17 +150,66 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 171);
+            this.label2.Location = new System.Drawing.Point(24, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Column";
+            // 
+            // comboBoxRole
+            // 
+            this.comboBoxRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRole.FormattingEnabled = true;
+            this.comboBoxRole.Location = new System.Drawing.Point(109, 82);
+            this.comboBoxRole.Name = "comboBoxRole";
+            this.comboBoxRole.Size = new System.Drawing.Size(359, 28);
+            this.comboBoxRole.TabIndex = 12;
+            this.comboBoxRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxRole_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(24, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Role";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // checkBoxNoneUser
+            // 
+            this.checkBoxNoneUser.AutoSize = true;
+            this.checkBoxNoneUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxNoneUser.Location = new System.Drawing.Point(542, 35);
+            this.checkBoxNoneUser.Name = "checkBoxNoneUser";
+            this.checkBoxNoneUser.Size = new System.Drawing.Size(64, 24);
+            this.checkBoxNoneUser.TabIndex = 14;
+            this.checkBoxNoneUser.Text = "none";
+            this.checkBoxNoneUser.UseVisualStyleBackColor = true;
+            this.checkBoxNoneUser.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_2);
+            // 
+            // checkBoxNoneRole
+            // 
+            this.checkBoxNoneRole.AutoSize = true;
+            this.checkBoxNoneRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxNoneRole.Location = new System.Drawing.Point(542, 89);
+            this.checkBoxNoneRole.Name = "checkBoxNoneRole";
+            this.checkBoxNoneRole.Size = new System.Drawing.Size(64, 24);
+            this.checkBoxNoneRole.TabIndex = 15;
+            this.checkBoxNoneRole.Text = "none";
+            this.checkBoxNoneRole.UseVisualStyleBackColor = true;
+            this.checkBoxNoneRole.CheckedChanged += new System.EventHandler(this.checkBoxNoneRole_CheckedChanged);
             // 
             // fGrantPrivileges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBoxNoneRole);
+            this.Controls.Add(this.checkBoxNoneUser);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBoxGrantOption);
@@ -186,5 +240,9 @@
         private System.Windows.Forms.CheckBox checkBoxGrantOption;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBoxNoneUser;
+        private System.Windows.Forms.CheckBox checkBoxNoneRole;
     }
 }
