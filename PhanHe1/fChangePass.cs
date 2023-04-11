@@ -20,11 +20,9 @@ namespace PhanHe1
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-            string procedure = "change_password_user";
-            int data = 0;
-            string query = "username password";
+            string query = "ALTER USER " +txbUserNameChange.Text+ " IDENTIFIED BY " + txbPassWordChange.Text;
             DataProvider provider = new DataProvider();
-            data = provider.ExecuteNonQuery_Procedure(procedure, query, new object[] { txbUserNameChange.Text, txbPassWordChange.Text });
+            int data = provider.ExecuteNonQuery(query);
             MessageBox.Show("Thay đổi mật khẩu thành công");
         }
 

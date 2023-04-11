@@ -27,6 +27,7 @@ namespace PhanHe1
             string query = "username password";
             DataProvider provider = new DataProvider();
             data=provider.ExecuteNonQuery_Procedure(procedure, query,new object[] {txbUserNameCreate.Text,txbPassWordCreate.Text});
+            MessageBox.Show("Tạo user thành công");
             
         }
 
