@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using PhanHe1.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,13 +39,73 @@ namespace PhanHe1
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
-            if (Login(userName,passWord))
+            string t1 = "staff";
+            string t2 = "manager";
+            string t3 = "cod";
+            string t4 = "finance";
+            string t5 = "hr";
+            string t6 = "pl";
+            string t7 = "director";
+            if (Login(userName, passWord))
             {
-                Form1 f = new Form1();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
+                if (userName.Contains(t1))
+                {
+                    fStaff f = new fStaff();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t2))
+                {
+                    fManager f = new fManager();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t3))
+                {
+                    fCOD f = new fCOD();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t4))
+                {
+                    fFinance f = new fFinance();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t5))
+                {
+                    fHR f = new fHR();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t6))
+                {
+                    fPL f = new fPL();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else if (userName.Contains(t7))
+                {
+                    fDirector f = new fDirector();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    Form1 f = new Form1();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
             }
+ 
             else
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu");
@@ -51,7 +114,19 @@ namespace PhanHe1
         }
         bool Login(string userName,string passWord)
         {
-            return userName=="admin" && passWord=="s123";
+            try
+            {
+                string query = "SELECT * from user_tables";
+                DataProvider provider = new DataProvider(userName, passWord);
+                int data = provider.ExecuteNonQuery(query);
+            }
+            catch
+            {
+                return false;
+            }
+            
+            
+            return true;
         }
 
         private void fLogin_Load(object sender, EventArgs e)

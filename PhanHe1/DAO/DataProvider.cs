@@ -12,16 +12,32 @@ namespace PhanHe1.DAO
 {  
     public class DataProvider
     {
-        static string host = "192.168.57.1";
-        static int port = 1521;
-        static string sid = "xe";
-        static string user = "admin";
-        static string password = "s123";
-        public static string connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
+        string host;
+        int port;
+        string sid;
+        string user ;
+        string password;
+        public static string connectionSTR;
+        public DataProvider() {
+            host = "192.168.57.1";
+            port = 1521;
+            sid = "xe";
+            user = "admin";
+            password = "s123";
+            connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
                  + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
                  + sid + ")));Password=" + password + ";User ID=" + user;
+    }
 
-
+        public DataProvider(string username,string userpassword)
+        {
+            host = "192.168.57.1";
+            port = 1521;
+            sid = "xe";
+            connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
+                 + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
+                 + sid + ")));Password=" + userpassword + ";User ID=" + username;
+        }
         public DataTable ExecuteQuery(string query, object[] paramenter = null)
         {
             DataTable data = new DataTable();

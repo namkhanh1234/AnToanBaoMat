@@ -86,11 +86,23 @@
     <Compile Include="fChangePass.Designer.cs">
       <DependentUpon>fChangePass.cs</DependentUpon>
     </Compile>
+    <Compile Include="fCOD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCOD.Designer.cs">
+      <DependentUpon>fCOD.cs</DependentUpon>
+    </Compile>
     <Compile Include="fCreate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fCreate.Designer.cs">
       <DependentUpon>fCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDirector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDirector.Designer.cs">
+      <DependentUpon>fDirector.cs</DependentUpon>
     </Compile>
     <Compile Include="fDropUser.cs">
       <SubType>Form</SubType>
@@ -98,17 +110,35 @@
     <Compile Include="fDropUser.Designer.cs">
       <DependentUpon>fDropUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="fFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFinance.Designer.cs">
+      <DependentUpon>fFinance.cs</DependentUpon>
+    </Compile>
     <Compile Include="fGrantPrivileges.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fGrantPrivileges.Designer.cs">
       <DependentUpon>fGrantPrivileges.cs</DependentUpon>
     </Compile>
+    <Compile Include="fHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHR.Designer.cs">
+      <DependentUpon>fHR.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
     </Compile>
     <Compile Include="fObjectPrivilegeRole.cs">
       <SubType>Form</SubType>
@@ -128,6 +158,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPL.Designer.cs">
+      <DependentUpon>fPL.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRevokeRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +182,12 @@
     <Compile Include="fRole.Designer.cs">
       <DependentUpon>fRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSystemPrivilegeRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,17 +205,32 @@
     <EmbeddedResource Include="fChangePass.resx">
       <DependentUpon>fChangePass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fCOD.resx">
+      <DependentUpon>fCOD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fCreate.resx">
       <DependentUpon>fCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDirector.resx">
+      <DependentUpon>fDirector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fDropUser.resx">
       <DependentUpon>fDropUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fFinance.resx">
+      <DependentUpon>fFinance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fGrantPrivileges.resx">
       <DependentUpon>fGrantPrivileges.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fHR.resx">
+      <DependentUpon>fHR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fObjectPrivilegeRole.resx">
       <DependentUpon>fObjectPrivilegeRole.cs</DependentUpon>
@@ -184,6 +241,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fPL.resx">
+      <DependentUpon>fPL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fRevokeRole.resx">
       <DependentUpon>fRevokeRole.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fRole.resx">
       <DependentUpon>fRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSystemPrivilegeRole.resx">
       <DependentUpon>fSystemPrivilegeRole.cs</DependentUpon>

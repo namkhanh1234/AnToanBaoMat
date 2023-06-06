@@ -120,5 +120,10 @@ namespace PhanHe1
             fRevokeRole f = new fRevokeRole();
             f.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
