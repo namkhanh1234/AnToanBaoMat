@@ -17,24 +17,24 @@ namespace PhanHe1.DAO
         string sid;
         string user ;
         string password;
-        public static string connectionSTR;
+        string connectionSTR;
         public DataProvider() {
-            host = "192.168.57.1";
-            port = 1521;
-            sid = "xe";
-            user = "admin";
-            password = "s123";
-            connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
+            this.host = "192.168.57.1";
+            this.port = 1521;
+            this.sid = "xe";
+            this.user = "admin";
+            this.password = "s123";
+            this.connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
                  + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
                  + sid + ")));Password=" + password + ";User ID=" + user;
     }
 
         public DataProvider(string username,string userpassword)
         {
-            host = "192.168.57.1";
-            port = 1521;
-            sid = "xe";
-            connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
+            this.host = "192.168.57.1";
+            this.port = 1521;
+            this.sid = "xe";
+            this.connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
                  + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
                  + sid + ")));Password=" + userpassword + ";User ID=" + username;
         }
@@ -80,26 +80,23 @@ namespace PhanHe1.DAO
 
             using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
-                connection.Open();
-
-                OracleCommand command = new OracleCommand(query, connection);
-                command.CommandType = CommandType.Text;
-
-                if (paramenter != null)
+             
+                using (OracleCommand command = new OracleCommand(query, connection))
                 {
-                    String[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
+                    try
                     {
-                        if (item.Contains('@'))
-                        {
-                            command.Parameters.Add(item, paramenter[i]);
-                            i++;
-                        }
+                        connection.Open();
+                        data = command.ExecuteNonQuery();
                     }
+                    catch (Exception ex)
+                {
+                    // Xử lý exception tại đây nếu cần thiết
+                    Console.WriteLine("Error: " + ex.Message);
+                    return -1; // Trả về -1 để biểu thị lỗi
                 }
-
-                data = command.ExecuteNonQuery();
+                    
+                } 
+                
 
                 connection.Close();
             }

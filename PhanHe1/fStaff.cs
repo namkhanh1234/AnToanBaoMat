@@ -13,7 +13,7 @@ namespace PhanHe1
     public partial class fStaff : Form
     {
         private string username;
-        string password;
+        private string password;
         public fStaff(string username, string password)
         {
             InitializeComponent();

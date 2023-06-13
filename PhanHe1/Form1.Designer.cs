@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(667, 59);
+            this.button1.Location = new System.Drawing.Point(667, 58);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 68);
             this.button1.TabIndex = 1;
@@ -82,7 +82,7 @@
             this.thuHoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(878, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(878, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -92,7 +92,7 @@
             this.quyềnCủaUserToolStripMenuItem,
             this.quyềnCủaRoleToolStripMenuItem});
             this.thôngTinVềQuyềnToolStripMenuItem.Name = "thôngTinVềQuyềnToolStripMenuItem";
-            this.thôngTinVềQuyềnToolStripMenuItem.Size = new System.Drawing.Size(149, 26);
+            this.thôngTinVềQuyềnToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.thôngTinVềQuyềnToolStripMenuItem.Text = "Thông tin về quyền";
             // 
             // quyềnCủaUserToolStripMenuItem
@@ -148,7 +148,7 @@
             this.xóaUserToolStripMenuItem,
             this.thayĐổiMậtKhẩuUserToolStripMenuItem});
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(52, 26);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.userToolStripMenuItem.Text = "User";
             // 
             // tạoUserToolStripMenuItem
@@ -175,7 +175,7 @@
             // roleToolStripMenuItem
             // 
             this.roleToolStripMenuItem.Name = "roleToolStripMenuItem";
-            this.roleToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
+            this.roleToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.roleToolStripMenuItem.Text = "Role";
             this.roleToolStripMenuItem.Click += new System.EventHandler(this.roleToolStripMenuItem_Click);
             // 
@@ -185,7 +185,7 @@
             this.userToolStripMenuItem2,
             this.roleToolStripMenuItem1});
             this.thuHoToolStripMenuItem.Name = "thuHoToolStripMenuItem";
-            this.thuHoToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
+            this.thuHoToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.thuHoToolStripMenuItem.Text = "Thu hồi quyền";
             // 
             // userToolStripMenuItem2

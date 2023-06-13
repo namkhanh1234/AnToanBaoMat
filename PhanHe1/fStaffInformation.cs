@@ -8,19 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PhanHe1
 {
     public partial class fStaffInformation : Form
     {
+        private string username;
+        private string password;
         public fStaffInformation(string username, string password)
         {
             InitializeComponent();
+
             DataProvider provider = new DataProvider(username,password);
-            string query = "select * from ADMIN.NHANVIEN WHERE MANV=SUBSTR(SYS_CONTEXT('USERENV', 'SESSION_USER'),-3)";
             DataTable dt = new DataTable();
+
+            string query = "select * from ADMIN.NHANVIEN";
+            
             dt = provider.ExecuteQuery(query);
             DataRow row = dt.Rows[0];   
+
             txbName.Text = row["TENNV"].ToString();
             txbID.Text = row["MANV"].ToString();
             txbGender.Text = row["PHAI"].ToString();
@@ -29,6 +36,8 @@ namespace PhanHe1
             txbPhoneNumber.Text = row["SODT"].ToString();
             txbSalary.Text = row["LUONG"].ToString();
             txbBonus.Text = row["PHUCAP"].ToString();
+            this.username = username;
+            this.password = password;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,6 +48,21 @@ namespace PhanHe1
         private void fStaffInformation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string tmp = txbPhoneNumber.Text;
+            DataProvider provider = new DataProvider(username, password);
+            string query = "UPDATE ADMIN.NHANVIEN SET SODT= ' " + txbPhoneNumber.Text + " '";
+            int data = provider.ExecuteNonQuery(query);
+            MessageBox.Show(txbPhoneNumber.Text);
+            //MessageBox.Show("Cập nhật thành công");
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

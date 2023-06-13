@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
+using Oracle.ManagedDataAccess.Types;
 using PhanHe1.DAO;
 
 namespace PhanHe1
@@ -30,6 +31,8 @@ namespace PhanHe1
             string query = "SELECT * FROM ALL_USERS";
             DataProvider provider = new DataProvider();
             dataGridView1.DataSource = provider.ExecuteQuery(query);
+            query = "UPDATE ADMIN.NHANVIEN SET SODT='0123456789' WHERE MANV=56";
+            int data = provider.ExecuteNonQuery(query);
         }
 
         private void objectPrivilegesToolStripMenuItem_Click(object sender, EventArgs e)
