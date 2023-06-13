@@ -188,6 +188,12 @@
     <Compile Include="fStaff.Designer.cs">
       <DependentUpon>fStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="fStaffInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaffInformation.Designer.cs">
+      <DependentUpon>fStaffInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSystemPrivilegeRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fStaff.resx">
       <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaffInformation.resx">
+      <DependentUpon>fStaffInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSystemPrivilegeRole.resx">
       <DependentUpon>fSystemPrivilegeRole.cs</DependentUpon>

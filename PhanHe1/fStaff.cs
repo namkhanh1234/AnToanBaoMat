@@ -12,9 +12,13 @@ namespace PhanHe1
 {
     public partial class fStaff : Form
     {
-        public fStaff()
+        private string username;
+        string password;
+        public fStaff(string username, string password)
         {
             InitializeComponent();
+            this.username = username;
+            this.password = password;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,13 +34,24 @@ namespace PhanHe1
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
-
-
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fStaffInformation f = new fStaffInformation(username,password);
+            f.ShowDialog();
+        }
+
+        private void fStaff_Load(object sender, EventArgs e)
         {
 
         }

@@ -50,7 +50,7 @@ namespace PhanHe1
             {
                 if (userName.Contains(t1))
                 {
-                    fStaff f = new fStaff();
+                    fStaff f = new fStaff(userName,passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

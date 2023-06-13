@@ -30,5 +30,10 @@ namespace PhanHe1
         {
             this.Hide();
         }
+
+        private void fChangePass_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

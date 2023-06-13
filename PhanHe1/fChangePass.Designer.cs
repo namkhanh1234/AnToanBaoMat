@@ -133,6 +133,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "fChangePass";
             this.Text = "Thay đổi mật khẩu";
+            this.Load += new System.EventHandler(this.fChangePass_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
