@@ -76,7 +76,6 @@ namespace PhanHe1.DAO
 
         public int ExecuteNonQuery(string query, object[] paramenter = null)
         {
-            int data = 0;
 
             using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
@@ -86,7 +85,8 @@ namespace PhanHe1.DAO
                     try
                     {
                         connection.Open();
-                        data = command.ExecuteNonQuery();
+                        int data = command.ExecuteNonQuery();
+                        return data;
                     }
                     catch (Exception ex)
                 {
@@ -100,8 +100,6 @@ namespace PhanHe1.DAO
 
                 connection.Close();
             }
-
-            return data;
         }
         public int ExecuteNonQuery_Procedure(string procedure,string query, object[] paramenter = null)
         {
