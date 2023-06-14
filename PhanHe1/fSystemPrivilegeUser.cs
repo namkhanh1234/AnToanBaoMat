@@ -20,11 +20,19 @@ namespace PhanHe1
 
         private void btnSearchSystemUser_Click(object sender, EventArgs e)
         {
-            string userName = txbUserNameSystemUser.Text;
-            userName = userName.ToUpper();
-            string query = "SELECT * FROM DBA_SYS_PRIVS WHERE GRANTEE = '" + userName + "'";
-            DataProvider provider = new DataProvider();
-            dgvSystemUser.DataSource = provider.ExecuteQuery(query);
+            try
+            {
+                string userName = txbUserNameSystemUser.Text;
+                userName = userName.ToUpper();
+                string query = "SELECT * FROM DBA_SYS_PRIVS WHERE GRANTEE = '" + userName + "'";
+                DataProvider provider = new DataProvider();
+                dgvSystemUser.DataSource = provider.ExecuteQuery(query);
+            }
+            catch
+            {
+                MessageBox.Show("User name nhập sai");
+            }
+          
         }
 
         private void dgvSystemUser_CellContentClick(object sender, DataGridViewCellEventArgs e)

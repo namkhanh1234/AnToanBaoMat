@@ -20,12 +20,20 @@ namespace PhanHe1
 
         private void btnSearchSystemrRole_Click(object sender, EventArgs e)
         {
-            string roleName = txbUserNameSystemRole.Text;
-            roleName = roleName.ToUpper();
-            string query = "SELECT * FROM ROLE_SYS_PRIVS WHERE ROLE = '" + roleName + "'";
-            DataProvider provider = new DataProvider();
-            dgvSystemRole.DataSource = provider.ExecuteQuery(query);
-            int check = provider.ExecuteNonQuery(query);
+            try
+            {
+                string roleName = txbUserNameSystemRole.Text;
+                roleName = roleName.ToUpper();
+                string query = "SELECT * FROM ROLE_SYS_PRIVS WHERE ROLE = '" + roleName + "'";
+                DataProvider provider = new DataProvider();
+                dgvSystemRole.DataSource = provider.ExecuteQuery(query);
+                int check = provider.ExecuteNonQuery(query);
+            }
+            catch
+            {
+                MessageBox.Show("Role name nhập sai");
+            }
+  
         }
 
         private void label1_Click(object sender, EventArgs e)

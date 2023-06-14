@@ -314,7 +314,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "fStaffInformation";
-            this.Text = "fStaffInformation";
+            this.Text = "Thông tin cá nhân";
             this.Load += new System.EventHandler(this.fStaffInformation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -12,9 +12,19 @@ namespace PhanHe1
 {
     public partial class fFinance : Form
     {
-        public fFinance()
+        private string username;
+        private string password;
+        public fFinance(string username,string password)
         {
             InitializeComponent();
+            this.username = username;
+            this.password = password;
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fStaffInformation f = new fStaffInformation(username, password);
+            f.ShowDialog();
         }
     }
 }

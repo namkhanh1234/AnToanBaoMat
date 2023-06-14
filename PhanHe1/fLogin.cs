@@ -57,42 +57,42 @@ namespace PhanHe1
                 }
                 else if (userName.Contains(t2))
                 {
-                    fManager f = new fManager();
+                    fManager f = new fManager(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
                 else if (userName.Contains(t3))
                 {
-                    fCOD f = new fCOD();
+                    fCOD f = new fCOD(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
                 else if (userName.Contains(t4))
                 {
-                    fFinance f = new fFinance();
+                    fFinance f = new fFinance(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
                 else if (userName.Contains(t5))
                 {
-                    fHR f = new fHR();
+                    fHR f = new fHR(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
                 else if (userName.Contains(t6))
                 {
-                    fPL f = new fPL();
+                    fPL f = new fPL(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
                 else if (userName.Contains(t7))
                 {
-                    fDirector f = new fDirector();
+                    fDirector f = new fDirector(userName, passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

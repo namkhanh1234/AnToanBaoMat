@@ -21,12 +21,19 @@ namespace PhanHe1
 
         private void btnDrop_Click(object sender, EventArgs e)
         {
-            string procedure = "drop_user";
-            int data = 0;
-            string query = "username";
-            DataProvider provider = new DataProvider();
-            data = provider.ExecuteNonQuery_Procedure(procedure, query, new object[] { txbUserNameDrop.Text });
-            MessageBox.Show("Xóa user thành công");
+            try
+            {
+                string procedure = "drop_user";
+                int data = 0;
+                string query = "username";
+                DataProvider provider = new DataProvider();
+                data = provider.ExecuteNonQuery_Procedure(procedure, query, new object[] { txbUserNameDrop.Text });
+                MessageBox.Show("Xóa user thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Nhập sai username");
+            }
         }
 
         private void btnCancelDrop_Click(object sender, EventArgs e)

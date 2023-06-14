@@ -50,10 +50,18 @@ namespace PhanHe1
 
         private void btnRevokeUser_Click(object sender, EventArgs e)
         {
-            string query = "REVOKE " + cbPrivileges.Text + " ON " + cbTable.Text + " FROM " + cbUserName.Text;
-            DataProvider provider = new DataProvider();
-            int data = provider.ExecuteNonQuery(query);
-            MessageBox.Show("Thu hồi quyền thành công");
+            try
+            {
+                string query = "REVOKE " + cbPrivileges.Text + " ON " + cbTable.Text + " FROM " + cbUserName.Text;
+                DataProvider provider = new DataProvider();
+                int data = provider.ExecuteNonQuery(query);
+                MessageBox.Show("Thu hồi quyền thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Thu hồi quyền không thành công");
+            }
+        
         }
 
         private void btnCancleRevoke_Click(object sender, EventArgs e)

@@ -20,25 +20,26 @@ namespace PhanHe1
         public fStaffInformation(string username, string password)
         {
             InitializeComponent();
-
-            DataProvider provider = new DataProvider(username,password);
-            DataTable dt = new DataTable();
-
-            string query = "select * from ADMIN.NHANVIEN";
-            
-            dt = provider.ExecuteQuery(query);
-            DataRow row = dt.Rows[0];   
-
-            txbName.Text = row["TENNV"].ToString();
-            txbID.Text = row["MANV"].ToString();
-            txbGender.Text = row["PHAI"].ToString();
-            txbBirthDay.Text = ((DateTime)row["NGAYSINH"]).ToShortDateString();
-            txbAddress.Text = row["DIACHI"].ToString();
-            txbPhoneNumber.Text = row["SODT"].ToString();
-            txbSalary.Text = row["LUONG"].ToString();
-            txbBonus.Text = row["PHUCAP"].ToString();
             this.username = username;
             this.password = password;
+
+                DataProvider provider = new DataProvider(username, password);
+                DataTable dt = new DataTable();
+
+                string query = "select * from ADMIN.NHANVIEN";
+
+                dt = provider.ExecuteQuery(query);
+                DataRow row = dt.Rows[0];
+
+                txbName.Text = row["TENNV"].ToString();
+                txbID.Text = row["MANV"].ToString();
+                txbGender.Text = row["PHAI"].ToString();
+                txbBirthDay.Text = ((DateTime)row["NGAYSINH"]).ToShortDateString();
+                txbAddress.Text = row["DIACHI"].ToString();
+                txbPhoneNumber.Text = row["SODT"].ToString();
+                txbSalary.Text = row["LUONG"].ToString();
+                txbBonus.Text = row["PHUCAP"].ToString();
+           
         }
 
         private void label1_Click(object sender, EventArgs e)

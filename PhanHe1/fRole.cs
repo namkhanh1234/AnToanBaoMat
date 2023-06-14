@@ -31,12 +31,20 @@ namespace PhanHe1
 
         private void btnDropRole_Click(object sender, EventArgs e)
         {
-            string procedure = "drop_role";
-            int data = 0;
-            string query = "rolename";
-            DataProvider provider = new DataProvider();
-            data = provider.ExecuteNonQuery_Procedure(procedure, query, new object[] { txbRoleName.Text });
-            MessageBox.Show("Xóa role thành công");
+            try
+            {
+                string procedure = "drop_role";
+                int data = 0;
+                string query = "rolename";
+                DataProvider provider = new DataProvider();
+                data = provider.ExecuteNonQuery_Procedure(procedure, query, new object[] { txbRoleName.Text });
+                MessageBox.Show("Xóa role thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Nhập rolename sai");
+            }
+        
         }
 
         private void btnCancelRole_Click(object sender, EventArgs e)
