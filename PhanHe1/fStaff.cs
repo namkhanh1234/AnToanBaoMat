@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhanHe1.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,9 @@ namespace PhanHe1
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            string query = "SELECT * FROM ADMIN.DEAN";
+            DataProvider provider = new DataProvider(username, password);
+            dgvStaff.DataSource = provider.ExecuteQuery(query);
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -52,6 +55,18 @@ namespace PhanHe1
         }
 
         private void fStaff_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewDepartment_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM ADMIN.PHONGBAN";
+            DataProvider provider = new DataProvider(username,password);
+            dgvStaff.DataSource=provider.ExecuteQuery(query);
+        }
+
+        private void nhữngĐềÁnThamGiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

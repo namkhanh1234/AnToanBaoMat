@@ -36,9 +36,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.thôngTinCáNhânToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nhữngĐềÁnThamGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -74,6 +74,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Xem thông tin đề án";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -84,6 +85,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Xem thông tin phòng ban";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -126,16 +128,6 @@
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 174);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(794, 274);
-            this.dataGridView1.TabIndex = 9;
-            // 
             // thôngTinCáNhânToolStripMenuItem1
             // 
             this.thôngTinCáNhânToolStripMenuItem1.Name = "thôngTinCáNhânToolStripMenuItem1";
@@ -148,6 +140,16 @@
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(1, 174);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(794, 274);
+            this.dataGridView1.TabIndex = 9;
             // 
             // fFinance
             // 

@@ -23,22 +23,22 @@ namespace PhanHe1
             this.username = username;
             this.password = password;
 
-                DataProvider provider = new DataProvider(username, password);
-                DataTable dt = new DataTable();
+            DataProvider provider = new DataProvider(username, password);
+            DataTable dt = new DataTable();
 
-                string query = "select * from ADMIN.NHANVIEN";
+            string query = "select * from ADMIN.view_staff";
 
-                dt = provider.ExecuteQuery(query);
-                DataRow row = dt.Rows[0];
+             dt = provider.ExecuteQuery(query);
+             DataRow row = dt.Rows[0];
 
-                txbName.Text = row["TENNV"].ToString();
-                txbID.Text = row["MANV"].ToString();
-                txbGender.Text = row["PHAI"].ToString();
-                txbBirthDay.Text = ((DateTime)row["NGAYSINH"]).ToShortDateString();
-                txbAddress.Text = row["DIACHI"].ToString();
-                txbPhoneNumber.Text = row["SODT"].ToString();
-                txbSalary.Text = row["LUONG"].ToString();
-                txbBonus.Text = row["PHUCAP"].ToString();
+             txbName.Text = row["TENNV"].ToString();
+             txbID.Text = row["MANV"].ToString();
+             txbGender.Text = row["PHAI"].ToString();
+             txbBirthDay.Text = ((DateTime)row["NGAYSINH"]).ToShortDateString();
+             txbAddress.Text = row["DIACHI"].ToString();
+             txbPhoneNumber.Text = row["SODT"].ToString();
+             txbSalary.Text = row["LUONG"].ToString();
+             txbBonus.Text = row["PHUCAP"].ToString();
            
         }
 
@@ -60,7 +60,7 @@ namespace PhanHe1
             {
                 string formattedDate = dateValue.ToString("dd-MM-yyyy");
                 DataProvider provider = new DataProvider(username, password);
-                string query = "UPDATE ADMIN.NHANVIEN SET SODT= '" + txbPhoneNumber.Text + "',DIACHI= '" + txbAddress.Text + "',NGAYSINH = TO_DATE('"+ formattedDate+"', 'dd-MM-yyyy')";
+                string query = "UPDATE ADMIN.view_staff SET SODT= '" + txbPhoneNumber.Text + "',DIACHI= '" + txbAddress.Text + "',NGAYSINH = TO_DATE('"+ formattedDate+"', 'dd-MM-yyyy')";
                 int data = provider.ExecuteNonQuery(query);
                 query = "commit";
                 data = provider.ExecuteNonQuery(query);

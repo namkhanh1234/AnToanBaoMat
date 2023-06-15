@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhanHe1.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,20 @@ namespace PhanHe1
         {
             fStaffInformation f = new fStaffInformation(username, password);
             f.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM ADMIN.PHONGBAN";
+            DataProvider provider = new DataProvider(username, password);
+            dataGridView1.DataSource = provider.ExecuteQuery(query);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM ADMIN.DEAN";
+            DataProvider provider = new DataProvider(username, password);
+            dataGridView1.DataSource = provider.ExecuteQuery(query);
         }
     }
 }

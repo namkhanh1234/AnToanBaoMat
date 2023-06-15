@@ -36,9 +36,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgv = new System.Windows.Forms.DataGridView();
             this.thôngTinCáNhânToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nhữngĐềÁnThamGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -74,6 +74,7 @@
             this.btnViewProject.TabIndex = 4;
             this.btnViewProject.Text = "Xem thông tin đề án";
             this.btnViewProject.UseVisualStyleBackColor = true;
+            this.btnViewProject.Click += new System.EventHandler(this.btnViewProject_Click);
             // 
             // btnViewDepartment
             // 
@@ -84,6 +85,7 @@
             this.btnViewDepartment.TabIndex = 3;
             this.btnViewDepartment.Text = "Xem thông tin phòng ban";
             this.btnViewDepartment.UseVisualStyleBackColor = true;
+            this.btnViewDepartment.Click += new System.EventHandler(this.btnViewDepartment_Click);
             // 
             // btnViewAssignment
             // 
@@ -126,16 +128,6 @@
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin";
             // 
-            // dgv
-            // 
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(3, 174);
-            this.dgv.Name = "dgv";
-            this.dgv.RowHeadersWidth = 51;
-            this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(794, 274);
-            this.dgv.TabIndex = 8;
-            // 
             // thôngTinCáNhânToolStripMenuItem1
             // 
             this.thôngTinCáNhânToolStripMenuItem1.Name = "thôngTinCáNhânToolStripMenuItem1";
@@ -148,6 +140,16 @@
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
+            // 
+            // dgv
+            // 
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(3, 174);
+            this.dgv.Name = "dgv";
+            this.dgv.RowHeadersWidth = 51;
+            this.dgv.RowTemplate.Height = 24;
+            this.dgv.Size = new System.Drawing.Size(794, 274);
+            this.dgv.TabIndex = 8;
             // 
             // fPL
             // 

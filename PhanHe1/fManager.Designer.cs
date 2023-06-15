@@ -39,6 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinCáNhânToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhữngĐềÁnThamGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinPhânCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +51,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.thôngTinCáNhânToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhữngĐềÁnThamGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).BeginInit();
             this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@
             this.btnViewProject.TabIndex = 4;
             this.btnViewProject.Text = "Xem thông tin đề án";
             this.btnViewProject.UseVisualStyleBackColor = true;
+            this.btnViewProject.Click += new System.EventHandler(this.btnViewProject_Click);
             // 
             // btnViewDepartment
             // 
@@ -127,6 +128,7 @@
             this.btnViewDepartment.TabIndex = 3;
             this.btnViewDepartment.Text = "Xem thông tin phòng ban";
             this.btnViewDepartment.UseVisualStyleBackColor = true;
+            this.btnViewDepartment.Click += new System.EventHandler(this.btnViewDepartment_Click);
             // 
             // btnViewAsignment
             // 
@@ -169,6 +171,19 @@
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin ";
+            // 
+            // thôngTinCáNhânToolStripMenuItem1
+            // 
+            this.thôngTinCáNhânToolStripMenuItem1.Name = "thôngTinCáNhânToolStripMenuItem1";
+            this.thôngTinCáNhânToolStripMenuItem1.Size = new System.Drawing.Size(241, 26);
+            this.thôngTinCáNhânToolStripMenuItem1.Text = "Thông tin cá nhân";
+            this.thôngTinCáNhânToolStripMenuItem1.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem1_Click);
+            // 
+            // nhữngĐềÁnThamGiaToolStripMenuItem
+            // 
+            this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
+            this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
             // 
             // quảnLýToolStripMenuItem
             // 
@@ -263,19 +278,6 @@
             this.label1.Size = new System.Drawing.Size(327, 39);
             this.label1.TabIndex = 5;
             this.label1.Text = "Người dùng: Quản lý";
-            // 
-            // thôngTinCáNhânToolStripMenuItem1
-            // 
-            this.thôngTinCáNhânToolStripMenuItem1.Name = "thôngTinCáNhânToolStripMenuItem1";
-            this.thôngTinCáNhânToolStripMenuItem1.Size = new System.Drawing.Size(241, 26);
-            this.thôngTinCáNhânToolStripMenuItem1.Text = "Thông tin cá nhân";
-            this.thôngTinCáNhânToolStripMenuItem1.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem1_Click);
-            // 
-            // nhữngĐềÁnThamGiaToolStripMenuItem
-            // 
-            this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
-            this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
-            this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
             // 
             // fManager
             // 
