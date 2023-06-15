@@ -140,6 +140,7 @@
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
+            this.nhữngĐềÁnThamGiaToolStripMenuItem.Click += new System.EventHandler(this.nhữngĐềÁnThamGiaToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 

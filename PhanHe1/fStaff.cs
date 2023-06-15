@@ -64,11 +64,20 @@ namespace PhanHe1
             string query = "SELECT * FROM ADMIN.PHONGBAN";
             DataProvider provider = new DataProvider(username,password);
             dgvStaff.DataSource=provider.ExecuteQuery(query);
+
         }
 
         private void nhữngĐềÁnThamGiaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            fJoinProject f = new fJoinProject(username,password);
+            f.ShowDialog();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow selectedRow = dgvStaff.SelectedRows[0];
+            string cellValue1 = selectedRow.Cells["MAPB"].Value.ToString();
+            MessageBox.Show(cellValue1);
         }
     }
 }

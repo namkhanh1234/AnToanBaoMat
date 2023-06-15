@@ -38,7 +38,7 @@ namespace PhanHe1.DAO
                  + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
                  + sid + ")));Password=" + userpassword + ";User ID=" + username;
         }
-        public DataTable ExecuteQuery(string query, object[] paramenter = null)
+        public DataTable ExecuteQuery(string query)
         {
             DataTable data = new DataTable();
 
@@ -50,20 +50,6 @@ namespace PhanHe1.DAO
 
                 OracleCommand command = new OracleCommand(query, connection);
 
-                if (paramenter != null)
-                {
-                    String[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
-                    {
-                        if (item.Contains('@'))
-                        {
-                            command.Parameters.Add(item, paramenter[i]);
-                            i++;
-                        }
-                    }
-                }
-
                 OracleDataAdapter adapter = new OracleDataAdapter(command);
 
                 adapter.Fill(data);
@@ -74,7 +60,7 @@ namespace PhanHe1.DAO
             return data;
         }
 
-        public int ExecuteNonQuery(string query, object[] paramenter = null)
+        public int ExecuteNonQuery(string query)
         {
 
             using (OracleConnection connection = new OracleConnection(connectionSTR))

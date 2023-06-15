@@ -122,3 +122,4 @@ D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fManager.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fPL.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fStaff.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fStaffInformation.resources
+D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fJoinProject.resources

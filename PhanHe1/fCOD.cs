@@ -46,5 +46,11 @@ namespace PhanHe1
             DataProvider provider = new DataProvider(username, password);
             dgvCOD.DataSource = provider.ExecuteQuery(query);
         }
+
+        private void nhữngĐềÁnĐãThamGiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fJoinProject f = new fJoinProject(username, password);
+            f.ShowDialog();
+        }
     }
 }

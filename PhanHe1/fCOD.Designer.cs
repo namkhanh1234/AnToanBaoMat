@@ -245,6 +245,7 @@
             this.nhữngĐềÁnĐãThamGiaToolStripMenuItem.Name = "nhữngĐềÁnĐãThamGiaToolStripMenuItem";
             this.nhữngĐềÁnĐãThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.nhữngĐềÁnĐãThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
+            this.nhữngĐềÁnĐãThamGiaToolStripMenuItem.Click += new System.EventHandler(this.nhữngĐềÁnĐãThamGiaToolStripMenuItem_Click);
             // 
             // quảnLýToolStripMenuItem
             // 

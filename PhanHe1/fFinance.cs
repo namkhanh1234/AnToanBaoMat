@@ -41,5 +41,11 @@ namespace PhanHe1
             DataProvider provider = new DataProvider(username, password);
             dataGridView1.DataSource = provider.ExecuteQuery(query);
         }
+
+        private void nhữngĐềÁnThamGiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fJoinProject f = new fJoinProject(username, password);
+            f.ShowDialog();
+        }
     }
 }
