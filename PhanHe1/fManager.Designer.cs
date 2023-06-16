@@ -35,7 +35,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnViewProject = new System.Windows.Forms.Button();
             this.btnViewDepartment = new System.Windows.Forms.Button();
-            this.btnViewAsignment = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,7 +101,6 @@
             // 
             this.panel5.Controls.Add(this.btnViewProject);
             this.panel5.Controls.Add(this.btnViewDepartment);
-            this.panel5.Controls.Add(this.btnViewAsignment);
             this.panel5.Location = new System.Drawing.Point(384, 31);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(407, 122);
@@ -111,9 +109,9 @@
             // btnViewProject
             // 
             this.btnViewProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewProject.Location = new System.Drawing.Point(281, 50);
+            this.btnViewProject.Location = new System.Drawing.Point(220, 28);
             this.btnViewProject.Name = "btnViewProject";
-            this.btnViewProject.Size = new System.Drawing.Size(123, 60);
+            this.btnViewProject.Size = new System.Drawing.Size(157, 73);
             this.btnViewProject.TabIndex = 4;
             this.btnViewProject.Text = "Xem thông tin đề án";
             this.btnViewProject.UseVisualStyleBackColor = true;
@@ -122,23 +120,13 @@
             // btnViewDepartment
             // 
             this.btnViewDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewDepartment.Location = new System.Drawing.Point(146, 54);
+            this.btnViewDepartment.Location = new System.Drawing.Point(49, 23);
             this.btnViewDepartment.Name = "btnViewDepartment";
-            this.btnViewDepartment.Size = new System.Drawing.Size(123, 60);
+            this.btnViewDepartment.Size = new System.Drawing.Size(141, 78);
             this.btnViewDepartment.TabIndex = 3;
             this.btnViewDepartment.Text = "Xem thông tin phòng ban";
             this.btnViewDepartment.UseVisualStyleBackColor = true;
             this.btnViewDepartment.Click += new System.EventHandler(this.btnViewDepartment_Click);
-            // 
-            // btnViewAsignment
-            // 
-            this.btnViewAsignment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewAsignment.Location = new System.Drawing.Point(3, 51);
-            this.btnViewAsignment.Name = "btnViewAsignment";
-            this.btnViewAsignment.Size = new System.Drawing.Size(123, 60);
-            this.btnViewAsignment.TabIndex = 1;
-            this.btnViewAsignment.Text = "Xem phân công";
-            this.btnViewAsignment.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -319,7 +307,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnViewProject;
         private System.Windows.Forms.Button btnViewDepartment;
-        private System.Windows.Forms.Button btnViewAsignment;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;

@@ -48,12 +48,11 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(14, 67);
+            this.label1.Location = new System.Drawing.Point(14, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 39);
+            this.label1.Size = new System.Drawing.Size(364, 84);
             this.label1.TabIndex = 5;
             this.label1.Text = "Người dùng: Nhân viên";
             this.label1.Click += new System.EventHandler(this.label1_Click);

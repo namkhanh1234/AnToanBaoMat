@@ -212,6 +212,12 @@
     <Compile Include="fSystemPrivilegeUser.Designer.cs">
       <DependentUpon>fSystemPrivilegeUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="fViewStaffManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fViewStaffManager.Designer.cs">
+      <DependentUpon>fViewStaffManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fChangePass.resx">
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fSystemPrivilegeUser.resx">
       <DependentUpon>fSystemPrivilegeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fViewStaffManager.resx">
+      <DependentUpon>fViewStaffManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

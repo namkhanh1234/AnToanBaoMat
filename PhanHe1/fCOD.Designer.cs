@@ -41,7 +41,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnViewProejct = new System.Windows.Forms.Button();
             this.btnViewDepartment = new System.Windows.Forms.Button();
-            this.btnViewAssignment = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +49,6 @@
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinPhânCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chỉnhSửaPhânCôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCOD)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,11 +61,11 @@
             // dgvCOD
             // 
             this.dgvCOD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCOD.Location = new System.Drawing.Point(3, 185);
+            this.dgvCOD.Location = new System.Drawing.Point(3, 162);
             this.dgvCOD.Name = "dgvCOD";
             this.dgvCOD.RowHeadersWidth = 51;
             this.dgvCOD.RowTemplate.Height = 24;
-            this.dgvCOD.Size = new System.Drawing.Size(794, 271);
+            this.dgvCOD.Size = new System.Drawing.Size(794, 294);
             this.dgvCOD.TabIndex = 7;
             // 
             // panel1
@@ -162,7 +160,6 @@
             // 
             this.panel5.Controls.Add(this.btnViewProejct);
             this.panel5.Controls.Add(this.btnViewDepartment);
-            this.panel5.Controls.Add(this.btnViewAssignment);
             this.panel5.Location = new System.Drawing.Point(384, 31);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(407, 122);
@@ -171,9 +168,9 @@
             // btnViewProejct
             // 
             this.btnViewProejct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewProejct.Location = new System.Drawing.Point(281, 50);
+            this.btnViewProejct.Location = new System.Drawing.Point(198, 28);
             this.btnViewProejct.Name = "btnViewProejct";
-            this.btnViewProejct.Size = new System.Drawing.Size(123, 60);
+            this.btnViewProejct.Size = new System.Drawing.Size(141, 72);
             this.btnViewProejct.TabIndex = 4;
             this.btnViewProejct.Text = "Xem thông tin đề án";
             this.btnViewProejct.UseVisualStyleBackColor = true;
@@ -182,23 +179,13 @@
             // btnViewDepartment
             // 
             this.btnViewDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewDepartment.Location = new System.Drawing.Point(137, 51);
+            this.btnViewDepartment.Location = new System.Drawing.Point(37, 28);
             this.btnViewDepartment.Name = "btnViewDepartment";
-            this.btnViewDepartment.Size = new System.Drawing.Size(123, 60);
+            this.btnViewDepartment.Size = new System.Drawing.Size(132, 72);
             this.btnViewDepartment.TabIndex = 3;
             this.btnViewDepartment.Text = "Xem thông tin phòng ban";
             this.btnViewDepartment.UseVisualStyleBackColor = true;
             this.btnViewDepartment.Click += new System.EventHandler(this.btnViewDepartment_Click);
-            // 
-            // btnViewAssignment
-            // 
-            this.btnViewAssignment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnViewAssignment.Location = new System.Drawing.Point(3, 51);
-            this.btnViewAssignment.Name = "btnViewAssignment";
-            this.btnViewAssignment.Size = new System.Drawing.Size(123, 60);
-            this.btnViewAssignment.TabIndex = 1;
-            this.btnViewAssignment.Text = "Xem phân công";
-            this.btnViewAssignment.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -251,8 +238,7 @@
             // 
             this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinNhânViênToolStripMenuItem,
-            this.thôngTinPhânCôngToolStripMenuItem,
-            this.chỉnhSửaPhânCôngToolStripMenuItem});
+            this.thôngTinPhânCôngToolStripMenuItem});
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
             this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.quảnLýToolStripMenuItem.Text = "Trưởng phòng";
@@ -268,12 +254,6 @@
             this.thôngTinPhânCôngToolStripMenuItem.Name = "thôngTinPhânCôngToolStripMenuItem";
             this.thôngTinPhânCôngToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.thôngTinPhânCôngToolStripMenuItem.Text = "Thông tin phân công";
-            // 
-            // chỉnhSửaPhânCôngToolStripMenuItem
-            // 
-            this.chỉnhSửaPhânCôngToolStripMenuItem.Name = "chỉnhSửaPhânCôngToolStripMenuItem";
-            this.chỉnhSửaPhânCôngToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
-            this.chỉnhSửaPhânCôngToolStripMenuItem.Text = "Chỉnh sửa phân công";
             // 
             // fCOD
             // 
@@ -315,14 +295,12 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnViewProejct;
         private System.Windows.Forms.Button btnViewDepartment;
-        private System.Windows.Forms.Button btnViewAssignment;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinNhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinPhânCôngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chỉnhSửaPhânCôngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nhữngĐềÁnĐãThamGiaToolStripMenuItem;
     }

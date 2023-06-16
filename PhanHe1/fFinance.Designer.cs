@@ -32,7 +32,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +58,6 @@
             // 
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button2);
             this.panel3.Location = new System.Drawing.Point(384, 31);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(420, 142);
@@ -68,9 +66,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button5.Location = new System.Drawing.Point(281, 62);
+            this.button5.Location = new System.Drawing.Point(216, 40);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(123, 60);
+            this.button5.Size = new System.Drawing.Size(138, 75);
             this.button5.TabIndex = 4;
             this.button5.Text = "Xem thông tin đề án";
             this.button5.UseVisualStyleBackColor = true;
@@ -79,31 +77,21 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button4.Location = new System.Drawing.Point(142, 62);
+            this.button4.Location = new System.Drawing.Point(54, 40);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(123, 60);
+            this.button4.Size = new System.Drawing.Size(136, 75);
             this.button4.TabIndex = 3;
             this.button4.Text = "Xem thông tin phòng ban";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button2.Location = new System.Drawing.Point(13, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Xem phân công";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(11, 59);
+            this.label2.Location = new System.Drawing.Point(11, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(364, 60);
+            this.label2.Size = new System.Drawing.Size(364, 87);
             this.label2.TabIndex = 5;
             this.label2.Text = "Người dùng: Tài chính";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -177,7 +165,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
