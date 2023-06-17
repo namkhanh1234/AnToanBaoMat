@@ -80,6 +80,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="fAssignmentCOD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAssignmentCOD.Designer.cs">
+      <DependentUpon>fAssignmentCOD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAssignmentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAssignmentManager.Designer.cs">
+      <DependentUpon>fAssignmentManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="fChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +232,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAssignmentCOD.resx">
+      <DependentUpon>fAssignmentCOD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAssignmentManager.resx">
+      <DependentUpon>fAssignmentManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fChangePass.resx">
       <DependentUpon>fChangePass.cs</DependentUpon>
     </EmbeddedResource>

@@ -37,6 +37,13 @@ namespace PhanHe1
             }    
             
             dgvViewStaffManager.DataSource=provider.ExecuteQuery(query);
+            txbName.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "TENNV"));
+            txbPhoneNumber.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "SODT"));
+            txbBirthday.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "NGAYSINH", true, DataSourceUpdateMode.Never, "", "dd/MM/yyyy"));
+            txbAddress.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "DIACHI"));
+            txbGender.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "PHAI"));
+            txbIdDepartment.DataBindings.Add(new Binding("Text", dgvViewStaffManager.DataSource, "PHG"));
+
 
         }
     }

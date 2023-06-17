@@ -188,12 +188,14 @@
             this.thôngTinNhânViênToolStripMenuItem.Name = "thôngTinNhânViênToolStripMenuItem";
             this.thôngTinNhânViênToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.thôngTinNhânViênToolStripMenuItem.Text = "Thông tin nhân viên";
+            this.thôngTinNhânViênToolStripMenuItem.Click += new System.EventHandler(this.thôngTinNhânViênToolStripMenuItem_Click);
             // 
             // thôngTinPhânCôngToolStripMenuItem
             // 
             this.thôngTinPhânCôngToolStripMenuItem.Name = "thôngTinPhânCôngToolStripMenuItem";
             this.thôngTinPhânCôngToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
             this.thôngTinPhânCôngToolStripMenuItem.Text = "Thông tin phân công";
+            this.thôngTinPhânCôngToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhânCôngToolStripMenuItem_Click);
             // 
             // panel3
             // 

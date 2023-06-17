@@ -53,5 +53,18 @@ namespace PhanHe1
             fJoinProject f = new fJoinProject(username, password);
             f.ShowDialog();
         }
+
+        private void thôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fViewStaffManager f = new fViewStaffManager(username,password);
+            f.ShowDialog();
+
+        }
+
+        private void thôngTinPhânCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAssignmentManager f = new fAssignmentManager(username, password);
+            f.ShowDialog();
+        }
     }
 }
