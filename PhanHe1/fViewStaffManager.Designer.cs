@@ -40,6 +40,12 @@
             this.txbPhoneNumber = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.txbIdDepartment = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.txbGender = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.txbAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,24 +54,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txbGender = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.txbIdDepartment = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewStaffManager)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -182,6 +182,60 @@
             this.panel3.Size = new System.Drawing.Size(339, 449);
             this.panel3.TabIndex = 1;
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.txbIdDepartment);
+            this.panel11.Controls.Add(this.label8);
+            this.panel11.Location = new System.Drawing.Point(8, 297);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(328, 48);
+            this.panel11.TabIndex = 4;
+            // 
+            // txbIdDepartment
+            // 
+            this.txbIdDepartment.Location = new System.Drawing.Point(163, 11);
+            this.txbIdDepartment.Name = "txbIdDepartment";
+            this.txbIdDepartment.ReadOnly = true;
+            this.txbIdDepartment.Size = new System.Drawing.Size(157, 22);
+            this.txbIdDepartment.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(3, 11);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 16);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Mã phòng:";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.txbGender);
+            this.panel10.Controls.Add(this.label7);
+            this.panel10.Location = new System.Drawing.Point(8, 243);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(328, 48);
+            this.panel10.TabIndex = 3;
+            // 
+            // txbGender
+            // 
+            this.txbGender.Location = new System.Drawing.Point(163, 11);
+            this.txbGender.Name = "txbGender";
+            this.txbGender.ReadOnly = true;
+            this.txbGender.Size = new System.Drawing.Size(157, 22);
+            this.txbGender.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(3, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Phái:";
+            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.txbAddress);
@@ -193,7 +247,7 @@
             // 
             // txbAddress
             // 
-            this.txbAddress.Location = new System.Drawing.Point(163, 23);
+            this.txbAddress.Location = new System.Drawing.Point(163, 14);
             this.txbAddress.Multiline = true;
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.ReadOnly = true;
@@ -255,60 +309,6 @@
             this.panel1.Size = new System.Drawing.Size(795, 452);
             this.panel1.TabIndex = 1;
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.txbGender);
-            this.panel10.Controls.Add(this.label7);
-            this.panel10.Location = new System.Drawing.Point(8, 243);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(328, 48);
-            this.panel10.TabIndex = 3;
-            // 
-            // txbGender
-            // 
-            this.txbGender.Location = new System.Drawing.Point(163, 11);
-            this.txbGender.Name = "txbGender";
-            this.txbGender.ReadOnly = true;
-            this.txbGender.Size = new System.Drawing.Size(157, 22);
-            this.txbGender.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(3, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Phái:";
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.txbIdDepartment);
-            this.panel11.Controls.Add(this.label8);
-            this.panel11.Location = new System.Drawing.Point(8, 297);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(328, 48);
-            this.panel11.TabIndex = 4;
-            // 
-            // txbIdDepartment
-            // 
-            this.txbIdDepartment.Location = new System.Drawing.Point(163, 11);
-            this.txbIdDepartment.Name = "txbIdDepartment";
-            this.txbIdDepartment.ReadOnly = true;
-            this.txbIdDepartment.Size = new System.Drawing.Size(157, 22);
-            this.txbIdDepartment.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(3, 11);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 16);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Mã phòng:";
-            // 
             // fViewStaffManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -327,6 +327,10 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -334,10 +338,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }

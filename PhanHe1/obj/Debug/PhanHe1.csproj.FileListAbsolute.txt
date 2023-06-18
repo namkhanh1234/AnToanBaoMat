@@ -125,3 +125,4 @@ D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fStaffInformation.res
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fJoinProject.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fViewStaffManager.resources
 D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fAssignmentManager.resources
+D:\NAM3\TQHDL\Clone\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fAssignmentCOD.resources

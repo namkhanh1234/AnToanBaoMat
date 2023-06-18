@@ -68,7 +68,7 @@ namespace PhanHe1
             }    
             else
             {
-                MessageBox.Show("Ngày nhập không đúng định dạng");
+                MessageBox.Show("Ngày nhập không đúng định dạng dd/MM/yyyy");
             }    
          
         }

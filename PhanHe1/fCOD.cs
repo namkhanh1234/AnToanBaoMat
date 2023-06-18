@@ -58,5 +58,11 @@ namespace PhanHe1
             fViewStaffManager f = new fViewStaffManager(username, password);
             f.ShowDialog();
         }
+
+        private void thôngTinPhânCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAssignmentCOD f = new fAssignmentCOD(username, password);
+            f.ShowDialog();
+        }
     }
 }

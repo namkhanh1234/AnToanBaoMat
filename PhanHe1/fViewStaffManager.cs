@@ -33,7 +33,7 @@ namespace PhanHe1
             }    
             else
             {
-                query = "SELECT * FORM ADMIN.view_infomation_staff_cod";
+                query = "SELECT * FROM ADMIN.view_assginment_staff_cod";
             }    
             
             dgvViewStaffManager.DataSource=provider.ExecuteQuery(query);
