@@ -27,11 +27,11 @@ namespace PhanHe1.DAO
             this.connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "
                  + host + ")(PORT = " + port + "))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = "
                  + sid + ")));Password=" + password + ";User ID=" + user;
-    }
+         }
 
         public DataProvider(string username,string userpassword)
         {
-            this.host = "192.168.57.1";
+            this.host = "localhost";
             this.port = 1521;
             this.sid = "xe";
             this.connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "

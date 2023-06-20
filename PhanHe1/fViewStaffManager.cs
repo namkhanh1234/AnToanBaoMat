@@ -46,5 +46,10 @@ namespace PhanHe1
 
 
         }
+
+        private void dgvViewStaffManager_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
