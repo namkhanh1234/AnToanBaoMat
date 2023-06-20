@@ -144,3 +144,4 @@ D:\Document-HK6\ATMTTT\DoAn\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fRole.resourc
 D:\Document-HK6\ATMTTT\DoAn\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fStaff.resources
 D:\Document-HK6\ATMTTT\DoAn\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fStaffInformation.resources
 D:\Document-HK6\ATMTTT\DoAn\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fViewStaffManager.resources
+D:\Document-HK6\ATMTTT\DoAn\AnToanBaoMat\PhanHe1\obj\Debug\PhanHe1.fEncryption.resources

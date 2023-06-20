@@ -99,7 +99,7 @@ namespace PhanHe1
                 }
                 else
                 {
-                    Form1 f = new Form1();
+                    fEncryption f = new fEncryption(userName,passWord);
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

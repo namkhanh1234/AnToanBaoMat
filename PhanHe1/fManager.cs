@@ -66,5 +66,15 @@ namespace PhanHe1
             fAssignmentManager f = new fAssignmentManager(username, password);
             f.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvManager_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

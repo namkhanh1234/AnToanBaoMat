@@ -122,6 +122,12 @@
     <Compile Include="fDropUser.Designer.cs">
       <DependentUpon>fDropUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="fEncryption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEncryption.Designer.cs">
+      <DependentUpon>fEncryption.cs</DependentUpon>
+    </Compile>
     <Compile Include="fFinance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fDropUser.resx">
       <DependentUpon>fDropUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEncryption.resx">
+      <DependentUpon>fEncryption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fFinance.resx">
       <DependentUpon>fFinance.cs</DependentUpon>
