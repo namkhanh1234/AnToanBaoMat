@@ -46,8 +46,6 @@ namespace PhanHe1.DAO
             {
                 connection.Open();
 
-             
-
                 OracleCommand command = new OracleCommand(query, connection);
 
                 OracleDataAdapter adapter = new OracleDataAdapter(command);
@@ -65,23 +63,17 @@ namespace PhanHe1.DAO
 
             using (OracleConnection connection = new OracleConnection(connectionSTR))
             {
-             
-                using (OracleCommand command = new OracleCommand(query, connection))
-                {
-                    try
-                    {
-                        connection.Open();
-                        int data = command.ExecuteNonQuery();
-                        return data;
-                    }
-                    catch (Exception ex)
-                {
-                    // Xử lý exception tại đây nếu cần thiết
-                    Console.WriteLine("Error: " + ex.Message);
-                    return -1; // Trả về -1 để biểu thị lỗi
-                }
+                connection.Open();
+
+                OracleCommand command = new OracleCommand(query, connection);
+
+
+                 int data = command.ExecuteNonQuery();
+                 return data;
                     
-                } 
+         
+   
+             
                 
 
                 connection.Close();
