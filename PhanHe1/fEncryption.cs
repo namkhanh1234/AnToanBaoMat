@@ -96,11 +96,11 @@ namespace PhanHe1
             int rowAffected = provider.ExecuteNonQuery(query);
             if (rowAffected == 0)
             {
-                MessageBox.Show("Thay đổi khoá không thành công"+rowAffected, "Thông báo");
+                MessageBox.Show("Thay đổi khoá không thành công", "Thông báo");
             }
             else
             {
-                MessageBox.Show("Thay đổi khoá thành công"+ rowAffected, "Thông báo");
+                MessageBox.Show("Thay đổi khoá thành công", "Thông báo");
                 string query1 = "SELECT * FROM ADMIN.KEY_ENCRYPT";
                 DataTable data = provider.ExecuteQuery(query1);
                 data.Columns["ID"].ColumnName = "id";
