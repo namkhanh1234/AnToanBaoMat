@@ -47,5 +47,22 @@ namespace PhanHe1
             fJoinProject f = new fJoinProject(username, password);
             f.ShowDialog();
         }
+
+        private void nhânSựToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thôngTinPhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDepartmentHR f = new fDepartmentHR(username, password);
+            f.ShowDialog();
+        }
+
+        private void thôngTinLươngVàPhụCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fSalaryHR f = new fSalaryHR(username, password);
+            f.ShowDialog();
+        }
     }
 }
