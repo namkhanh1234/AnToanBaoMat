@@ -86,11 +86,23 @@
     <Compile Include="fAssignmentCOD.Designer.cs">
       <DependentUpon>fAssignmentCOD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FAssignmentFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAssignmentFinance.Designer.cs">
+      <DependentUpon>FAssignmentFinance.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAssignmentManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fAssignmentManager.Designer.cs">
       <DependentUpon>fAssignmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAssignmentPL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAssignmentPL.Designer.cs">
+      <DependentUpon>fAssignmentPL.cs</DependentUpon>
     </Compile>
     <Compile Include="fChangePass.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,12 @@
     </Compile>
     <Compile Include="fCreate.Designer.cs">
       <DependentUpon>fCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDepartmentHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDepartmentHR.Designer.cs">
+      <DependentUpon>fDepartmentHR.cs</DependentUpon>
     </Compile>
     <Compile Include="fDirector.cs">
       <SubType>Form</SubType>
@@ -206,11 +224,23 @@
     <Compile Include="fRole.Designer.cs">
       <DependentUpon>fRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSalaryHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSalaryHR.Designer.cs">
+      <DependentUpon>fSalaryHR.cs</DependentUpon>
+    </Compile>
     <Compile Include="fStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fStaff.Designer.cs">
       <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStaffFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaffFinance.Designer.cs">
+      <DependentUpon>fStaffFinance.cs</DependentUpon>
     </Compile>
     <Compile Include="fStaffInformation.cs">
       <SubType>Form</SubType>
@@ -236,13 +266,20 @@
     <Compile Include="fViewStaffManager.Designer.cs">
       <DependentUpon>fViewStaffManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAssignmentCOD.resx">
       <DependentUpon>fAssignmentCOD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FAssignmentFinance.resx">
+      <DependentUpon>FAssignmentFinance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAssignmentManager.resx">
       <DependentUpon>fAssignmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAssignmentPL.resx">
+      <DependentUpon>fAssignmentPL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fChangePass.resx">
       <DependentUpon>fChangePass.cs</DependentUpon>
@@ -252,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fCreate.resx">
       <DependentUpon>fCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDepartmentHR.resx">
+      <DependentUpon>fDepartmentHR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fDirector.resx">
       <DependentUpon>fDirector.cs</DependentUpon>
@@ -301,8 +341,14 @@
     <EmbeddedResource Include="fRole.resx">
       <DependentUpon>fRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fSalaryHR.resx">
+      <DependentUpon>fSalaryHR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fStaff.resx">
       <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaffFinance.resx">
+      <DependentUpon>fStaffFinance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fStaffInformation.resx">
       <DependentUpon>fStaffInformation.cs</DependentUpon>
@@ -316,6 +362,33 @@
     <EmbeddedResource Include="fViewStaffManager.resx">
       <DependentUpon>fViewStaffManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fAssignmentCOD.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fAssignmentManager.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fChangePass.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fCOD.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fCreate.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fDirector.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fDropUser.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fEncryption.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fFinance.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fGrantPrivileges.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fHR.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fJoinProject.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fManager.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fObjectPrivilegeRole.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fObjectPrivilegeUser.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fPL.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fRevokeRole.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fRevokeUser.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fRole.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fStaff.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fStaffInformation.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fSystemPrivilegeRole.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fSystemPrivilegeUser.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.fViewStaffManager.resources" />
+    <EmbeddedResource Include="obj\Debug\PhanHe1.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -325,6 +398,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\PhanHe1.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\PhanHe1.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\PhanHe1.csproj.CopyComplete" />
+    <None Include="obj\Debug\PhanHe1.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\PhanHe1.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\PhanHe1.csproj.SuggestedBindingRedirects.cache" />
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -347,6 +428,33 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTO\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="bin\Debug\Oracle.ManagedDataAccess.dll" />
+    <Content Include="bin\Debug\PhanHe1.exe" />
+    <Content Include="bin\Debug\PhanHe1.pdb" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Content Include="bin\Debug\System.Buffers.xml" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Content Include="bin\Debug\System.Memory.xml" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\Debug\System.Text.Encodings.Web.xml" />
+    <Content Include="bin\Debug\System.Text.Json.dll" />
+    <Content Include="bin\Debug\System.Text.Json.xml" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Debug\System.ValueTuple.dll" />
+    <Content Include="bin\Debug\System.ValueTuple.xml" />
+    <Content Include="obj\Debug\PhanHe1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PhanHe1.exe" />
+    <Content Include="obj\Debug\PhanHe1.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

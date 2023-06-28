@@ -126,11 +126,5 @@ namespace PhanHe1
         {
 
         }
-
-        private void btnManageKey_Click(object sender, EventArgs e)
-        {
-            fEncryption f = new fEncryption("admin","s123");
-            f.ShowDialog();
-        }
     }
 }
