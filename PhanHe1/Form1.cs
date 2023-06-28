@@ -15,10 +15,13 @@ namespace PhanHe1
 {
     public partial class Form1 : Form
     {
-
-        public Form1()
+        private string username;
+        private string password;
+        public Form1(string username, string password)
         {
             InitializeComponent();
+            this.username = username;
+            this.password = password;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -125,6 +128,11 @@ namespace PhanHe1
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnKey_Click(object sender, EventArgs e)
+        {
+            fEncryption f = new fEncryption(username, password);
         }
     }
 }

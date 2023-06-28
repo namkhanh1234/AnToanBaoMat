@@ -48,6 +48,7 @@
             this.roleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGrantPrivileges = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnKey = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,9 +65,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(667, 58);
+            this.button1.Location = new System.Drawing.Point(597, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 68);
+            this.button1.Size = new System.Drawing.Size(107, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Xem danh sách người dùng";
             this.button1.UseVisualStyleBackColor = true;
@@ -204,9 +205,9 @@
             // 
             // btnGrantPrivileges
             // 
-            this.btnGrantPrivileges.Location = new System.Drawing.Point(477, 57);
+            this.btnGrantPrivileges.Location = new System.Drawing.Point(459, 59);
             this.btnGrantPrivileges.Name = "btnGrantPrivileges";
-            this.btnGrantPrivileges.Size = new System.Drawing.Size(184, 70);
+            this.btnGrantPrivileges.Size = new System.Drawing.Size(113, 52);
             this.btnGrantPrivileges.TabIndex = 3;
             this.btnGrantPrivileges.Text = "Cấp quyền";
             this.btnGrantPrivileges.UseVisualStyleBackColor = true;
@@ -224,11 +225,22 @@
             this.label1.Text = "Người dùng: Quản trị viên";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnKey
+            // 
+            this.btnKey.Location = new System.Drawing.Point(726, 63);
+            this.btnKey.Name = "btnKey";
+            this.btnKey.Size = new System.Drawing.Size(115, 48);
+            this.btnKey.TabIndex = 5;
+            this.btnKey.Text = "Quản lý khóa";
+            this.btnKey.UseVisualStyleBackColor = true;
+            this.btnKey.Click += new System.EventHandler(this.btnKey_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 490);
+            this.Controls.Add(this.btnKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGrantPrivileges);
             this.Controls.Add(this.button1);
@@ -269,6 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem roleToolStripMenuItem1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnKey;
     }
 }
 

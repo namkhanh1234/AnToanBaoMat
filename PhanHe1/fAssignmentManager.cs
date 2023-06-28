@@ -54,6 +54,7 @@ namespace PhanHe1
 
                 txbNameStaff.Text = row["TENNV"].ToString();
                 txbPhone.Text = row["SODT"].ToString();
+                MessageBox.Show(cellValue);
             }
             catch
             {
