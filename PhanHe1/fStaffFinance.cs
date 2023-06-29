@@ -55,7 +55,7 @@ namespace PhanHe1
 
                 int newLUONG = Convert.ToInt32(txbLuong.Text);
                 DataProvider provider = new DataProvider(username, password);
-                string query = "UPDATE NHANVIEN SET PHUCAP= " + newLUONG + " WHERE MANV= " + cellValue;
+                string query = "UPDATE ADMIN.NHANVIEN SET LUONG= " + newLUONG + " WHERE MANV= " + cellValue;
                 provider.ExecuteNonQuery(query);
                 MessageBox.Show("Cập nhật thành công");
                 dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.NHANVIEN");
@@ -76,7 +76,7 @@ namespace PhanHe1
 
                 int newPHUCAP = Convert.ToInt32(txbPhuCap.Text);
                 DataProvider provider = new DataProvider(username, password);
-                string query = "UPDATE NHANVIEN SET PHUCAP= " + newPHUCAP + " WHERE MANV= " + cellValue;
+                string query = "UPDATE ADMIN.NHANVIEN SET PHUCAP= " + newPHUCAP + " WHERE MANV= " + cellValue;
                 provider.ExecuteNonQuery(query);
                 MessageBox.Show("Cập nhật thành công");
                 dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.NHANVIEN");

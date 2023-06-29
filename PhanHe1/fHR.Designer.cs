@@ -50,12 +50,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 145);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 178);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(596, 223);
+            this.dataGridView1.Size = new System.Drawing.Size(795, 274);
             this.dataGridView1.TabIndex = 6;
             // 
             // panel1
@@ -63,29 +63,29 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(2, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(3, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(603, 127);
+            this.panel1.Size = new System.Drawing.Size(804, 156);
             this.panel1.TabIndex = 7;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(288, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(399, 31);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(315, 115);
+            this.panel3.Size = new System.Drawing.Size(405, 131);
             this.panel3.TabIndex = 6;
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button5.Location = new System.Drawing.Point(170, 29);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(227, 36);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 60);
+            this.button5.Size = new System.Drawing.Size(139, 74);
             this.button5.TabIndex = 4;
             this.button5.Text = "Xem thông tin đề án";
             this.button5.UseVisualStyleBackColor = true;
@@ -94,10 +94,10 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button4.Location = new System.Drawing.Point(40, 29);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(53, 36);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 60);
+            this.button4.Size = new System.Drawing.Size(133, 74);
             this.button4.TabIndex = 3;
             this.button4.Text = "Xem thông tin phòng ban";
             this.button4.UseVisualStyleBackColor = true;
@@ -107,10 +107,9 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(20, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(9, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 60);
+            this.label1.Size = new System.Drawing.Size(384, 87);
             this.label1.TabIndex = 5;
             this.label1.Text = "Người dùng: Nhân sự";
             // 
@@ -122,8 +121,8 @@
             this.nhânSựToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(603, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(804, 28);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,20 +132,20 @@
             this.thôngTinCáNhânToolStripMenuItem1,
             this.nhữngĐềÁnThamGiaToolStripMenuItem});
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin";
             // 
             // thôngTinCáNhânToolStripMenuItem1
             // 
             this.thôngTinCáNhânToolStripMenuItem1.Name = "thôngTinCáNhânToolStripMenuItem1";
-            this.thôngTinCáNhânToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
+            this.thôngTinCáNhânToolStripMenuItem1.Size = new System.Drawing.Size(241, 26);
             this.thôngTinCáNhânToolStripMenuItem1.Text = "Thông tin cá nhân";
             this.thôngTinCáNhânToolStripMenuItem1.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem1_Click);
             // 
             // nhữngĐềÁnThamGiaToolStripMenuItem
             // 
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Name = "nhữngĐềÁnThamGiaToolStripMenuItem";
-            this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.nhữngĐềÁnThamGiaToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Text = "Những đề án tham gia";
             this.nhữngĐềÁnThamGiaToolStripMenuItem.Click += new System.EventHandler(this.nhữngĐềÁnThamGiaToolStripMenuItem_Click);
             // 
@@ -156,32 +155,32 @@
             this.thôngTinPhoToolStripMenuItem,
             this.thôngTinLươngVàPhụCấpToolStripMenuItem});
             this.nhânSựToolStripMenuItem.Name = "nhânSựToolStripMenuItem";
-            this.nhânSựToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.nhânSựToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
             this.nhânSựToolStripMenuItem.Text = "Nhân sự";
             this.nhânSựToolStripMenuItem.Click += new System.EventHandler(this.nhânSựToolStripMenuItem_Click);
             // 
             // thôngTinPhoToolStripMenuItem
             // 
             this.thôngTinPhoToolStripMenuItem.Name = "thôngTinPhoToolStripMenuItem";
-            this.thôngTinPhoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.thôngTinPhoToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.thôngTinPhoToolStripMenuItem.Text = "Thông tin phòng ban";
             this.thôngTinPhoToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhoToolStripMenuItem_Click);
             // 
             // thôngTinLươngVàPhụCấpToolStripMenuItem
             // 
             this.thôngTinLươngVàPhụCấpToolStripMenuItem.Name = "thôngTinLươngVàPhụCấpToolStripMenuItem";
-            this.thôngTinLươngVàPhụCấpToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.thôngTinLươngVàPhụCấpToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.thôngTinLươngVàPhụCấpToolStripMenuItem.Text = "Thông tin lương và phụ cấp";
             this.thôngTinLươngVàPhụCấpToolStripMenuItem.Click += new System.EventHandler(this.thôngTinLươngVàPhụCấpToolStripMenuItem_Click);
             // 
             // fHR
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fHR";
             this.Text = "Nhân sự";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

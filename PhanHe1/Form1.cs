@@ -133,6 +133,7 @@ namespace PhanHe1
         private void btnKey_Click(object sender, EventArgs e)
         {
             fEncryption f = new fEncryption(username, password);
+            f.ShowDialog();
         }
     }
 }

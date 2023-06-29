@@ -65,9 +65,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(597, 59);
+            this.button1.Location = new System.Drawing.Point(604, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 52);
+            this.button1.Size = new System.Drawing.Size(120, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Xem danh sách người dùng";
             this.button1.UseVisualStyleBackColor = true;
@@ -205,7 +205,7 @@
             // 
             // btnGrantPrivileges
             // 
-            this.btnGrantPrivileges.Location = new System.Drawing.Point(459, 59);
+            this.btnGrantPrivileges.Location = new System.Drawing.Point(466, 59);
             this.btnGrantPrivileges.Name = "btnGrantPrivileges";
             this.btnGrantPrivileges.Size = new System.Drawing.Size(113, 52);
             this.btnGrantPrivileges.TabIndex = 3;
@@ -227,7 +227,7 @@
             // 
             // btnKey
             // 
-            this.btnKey.Location = new System.Drawing.Point(726, 63);
+            this.btnKey.Location = new System.Drawing.Point(739, 63);
             this.btnKey.Name = "btnKey";
             this.btnKey.Size = new System.Drawing.Size(115, 48);
             this.btnKey.TabIndex = 5;

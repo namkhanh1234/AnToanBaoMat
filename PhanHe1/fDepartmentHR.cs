@@ -44,7 +44,7 @@ namespace PhanHe1
 
             DataProvider provider = new DataProvider(username, password);
 
-            string query = "INSERT INTO ADMIN.PHANCONG VALUES("
+            string query = "INSERT INTO ADMIN.PHONGBAN VALUES("
                + Convert.ToInt32(txbMaPB.Text) + ",'" + txbTenPB + "'," + Convert.ToInt32(txbMaTP.Text);
             provider.ExecuteNonQuery(query);
             MessageBox.Show("Thêm thành công");
