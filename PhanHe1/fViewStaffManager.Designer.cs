@@ -84,7 +84,7 @@
             this.panel2.Controls.Add(this.dgvViewStaffManager);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 365);
             this.panel2.TabIndex = 0;
@@ -93,7 +93,7 @@
             // 
             this.dgvViewStaffManager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvViewStaffManager.Location = new System.Drawing.Point(2, 69);
-            this.dgvViewStaffManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvViewStaffManager.Margin = new System.Windows.Forms.Padding(2);
             this.dgvViewStaffManager.Name = "dgvViewStaffManager";
             this.dgvViewStaffManager.RowHeadersWidth = 51;
             this.dgvViewStaffManager.RowTemplate.Height = 24;
@@ -105,10 +105,11 @@
             // 
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(332, 61);
             this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label2
             // 
@@ -125,7 +126,7 @@
             // 
             this.panel5.Controls.Add(this.label2);
             this.panel5.Location = new System.Drawing.Point(2, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(252, 60);
             this.panel5.TabIndex = 0;
@@ -133,7 +134,7 @@
             // txbName
             // 
             this.txbName.Location = new System.Drawing.Point(122, 12);
-            this.txbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbName.Margin = new System.Windows.Forms.Padding(2);
             this.txbName.Name = "txbName";
             this.txbName.ReadOnly = true;
             this.txbName.Size = new System.Drawing.Size(119, 20);
@@ -155,7 +156,7 @@
             this.panel6.Controls.Add(this.txbName);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Location = new System.Drawing.Point(7, 69);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(246, 39);
             this.panel6.TabIndex = 1;
@@ -163,7 +164,7 @@
             // txbPhoneNumber
             // 
             this.txbPhoneNumber.Location = new System.Drawing.Point(122, 12);
-            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
             this.txbPhoneNumber.Name = "txbPhoneNumber";
             this.txbPhoneNumber.ReadOnly = true;
             this.txbPhoneNumber.Size = new System.Drawing.Size(119, 20);
@@ -190,7 +191,7 @@
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Location = new System.Drawing.Point(341, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(254, 365);
             this.panel3.TabIndex = 1;
@@ -200,7 +201,7 @@
             this.panel11.Controls.Add(this.txbIdDepartment);
             this.panel11.Controls.Add(this.label8);
             this.panel11.Location = new System.Drawing.Point(6, 241);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(246, 39);
             this.panel11.TabIndex = 4;
@@ -208,7 +209,7 @@
             // txbIdDepartment
             // 
             this.txbIdDepartment.Location = new System.Drawing.Point(122, 9);
-            this.txbIdDepartment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbIdDepartment.Margin = new System.Windows.Forms.Padding(2);
             this.txbIdDepartment.Name = "txbIdDepartment";
             this.txbIdDepartment.ReadOnly = true;
             this.txbIdDepartment.Size = new System.Drawing.Size(119, 20);
@@ -230,7 +231,7 @@
             this.panel10.Controls.Add(this.txbGender);
             this.panel10.Controls.Add(this.label7);
             this.panel10.Location = new System.Drawing.Point(6, 197);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(246, 39);
             this.panel10.TabIndex = 3;
@@ -238,7 +239,7 @@
             // txbGender
             // 
             this.txbGender.Location = new System.Drawing.Point(122, 9);
-            this.txbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbGender.Margin = new System.Windows.Forms.Padding(2);
             this.txbGender.Name = "txbGender";
             this.txbGender.ReadOnly = true;
             this.txbGender.Size = new System.Drawing.Size(119, 20);
@@ -260,7 +261,7 @@
             this.panel9.Controls.Add(this.txbAddress);
             this.panel9.Controls.Add(this.label6);
             this.panel9.Location = new System.Drawing.Point(6, 286);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(246, 76);
             this.panel9.TabIndex = 3;
@@ -268,7 +269,7 @@
             // txbAddress
             // 
             this.txbAddress.Location = new System.Drawing.Point(122, 11);
-            this.txbAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txbAddress.Multiline = true;
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.ReadOnly = true;
@@ -291,7 +292,7 @@
             this.panel8.Controls.Add(this.txbBirthday);
             this.panel8.Controls.Add(this.label5);
             this.panel8.Location = new System.Drawing.Point(7, 154);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(246, 39);
             this.panel8.TabIndex = 2;
@@ -299,7 +300,7 @@
             // txbBirthday
             // 
             this.txbBirthday.Location = new System.Drawing.Point(122, 9);
-            this.txbBirthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbBirthday.Margin = new System.Windows.Forms.Padding(2);
             this.txbBirthday.Name = "txbBirthday";
             this.txbBirthday.ReadOnly = true;
             this.txbBirthday.Size = new System.Drawing.Size(119, 20);
@@ -321,7 +322,7 @@
             this.panel7.Controls.Add(this.txbPhoneNumber);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Location = new System.Drawing.Point(8, 113);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(246, 36);
             this.panel7.TabIndex = 2;
@@ -331,7 +332,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(2, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(596, 367);
             this.panel1.TabIndex = 1;
@@ -342,7 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fViewStaffManager";
             this.Text = "Thông tin những nhân viên quản lý";
             this.Load += new System.EventHandler(this.fViewStaffManager_Load);

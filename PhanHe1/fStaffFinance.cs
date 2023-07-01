@@ -35,7 +35,7 @@ namespace PhanHe1
                 string query = "";
 
 
-                query = "SELECT * FROM ADMIN.NHANVIEN";
+                query = "SELECT * FROM ADMIN.descrypted_nhanvien";
 
 
                 dgvStaffFinance.DataSource = provider.ExecuteQuery(query);
@@ -58,7 +58,7 @@ namespace PhanHe1
                 string query = "UPDATE ADMIN.NHANVIEN SET LUONG= " + newLUONG + " WHERE MANV= " + cellValue;
                 provider.ExecuteNonQuery(query);
                 MessageBox.Show("Cập nhật thành công");
-                dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.NHANVIEN");
+                dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.descrypted_nhanvien");
             }
             catch
             {
@@ -79,7 +79,7 @@ namespace PhanHe1
                 string query = "UPDATE ADMIN.NHANVIEN SET PHUCAP= " + newPHUCAP + " WHERE MANV= " + cellValue;
                 provider.ExecuteNonQuery(query);
                 MessageBox.Show("Cập nhật thành công");
-                dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.NHANVIEN");
+                dgvStaffFinance.DataSource = provider.ExecuteQuery("SELECT * FROM ADMIN.descrypted_nhanvien");
             }
             catch
             {

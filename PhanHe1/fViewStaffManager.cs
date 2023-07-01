@@ -33,7 +33,7 @@ namespace PhanHe1
             }    
             else
             {
-                query = "SELECT * FROM ADMIN.view_assginment_staff_cod";
+                query = "SELECT * FROM ADMIN.view_infomation_staff_cod";
             }    
             
             dgvViewStaffManager.DataSource=provider.ExecuteQuery(query);
@@ -48,6 +48,11 @@ namespace PhanHe1
         }
 
         private void dgvViewStaffManager_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

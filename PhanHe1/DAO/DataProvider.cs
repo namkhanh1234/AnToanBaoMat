@@ -19,7 +19,7 @@ namespace PhanHe1.DAO
         string password;
         string connectionSTR;
         public DataProvider() {
-            this.host = "192.168.57.1";
+            this.host = "localhost";
             this.port = 1521;
             this.sid = "xe";
             this.user = "admin";
@@ -31,7 +31,7 @@ namespace PhanHe1.DAO
 
         public DataProvider(string username,string userpassword)
         {
-            this.host = "192.168.57.1";
+            this.host = "localhost";
             this.port = 1521;
             this.sid = "xe";
             this.connectionSTR = @"Data Source=(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = "

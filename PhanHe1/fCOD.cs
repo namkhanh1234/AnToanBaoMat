@@ -64,5 +64,10 @@ namespace PhanHe1
             fAssignmentCOD f = new fAssignmentCOD(username, password);
             f.ShowDialog();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
